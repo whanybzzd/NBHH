@@ -11,7 +11,8 @@ import SnapKit
 import ReactiveSwift
 import HandyJSON
 import SwiftyJSON
-class ViewController: UIViewController {
+import KRProgressHUD
+class ViewController: BaseViewController {
     let loginView=LoginView()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
         
         self.loginView.buttonClick.reactive.controlEvents(.touchUpInside).observeValues { (button) in
             
+            KRProgressHUD.show()
             LoginViewModel.sharedInstance.loginResult(username: "lw", password: "666666", nextPageTrigger: SignalProducer.empty)
                 .on(value: { response in
                     
@@ -46,10 +48,12 @@ class ViewController: UIViewController {
                     let json=JSON(response)
                     let jsonModel=JSONDeserializer<UserMessage>.deserializeFrom(json: json.description,designatedPath:"data")
                     print("res:\(String(describing: jsonModel!.nickname))")
+                    KRProgressHUD.dismiss()
                 })
                 .on(failed:{error in
                     
                     print("错误:\(error)")
+                    KRProgressHUD.showError()
                 })
                 .start()
         }

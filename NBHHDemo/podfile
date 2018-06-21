@@ -4,9 +4,9 @@ use_frameworks!
 
 target 'NBHHDemo' do
     #-- OC库
-    pod 'MBProgressHUD'
     pod 'IQKeyboardManager'
 
+    pod "KRProgressHUD"
     pod 'ReactiveCocoa'
     pod 'HandyJSON', '~> 4.1.1'
     pod 'SwiftyJSON', '~> 4.1.0'
