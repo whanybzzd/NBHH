@@ -106,7 +106,7 @@ class LoginView: UIView {
         self.addSubview(buttonClick)
         buttonClick .setTitle("登录", for: UIControlState.normal)
         buttonClick.backgroundColor=UIColor.colorWithHexString("#d5d6db")
-        buttonClick.isEnabled=false
+        //buttonClick.isEnabled=false
         buttonClick.setTitleColor(UIColor.white, for: UIControlState.normal)
         buttonClick.titleLabel?.font=UIFont.systemFont(ofSize: 15)
         buttonClick.layer.cornerRadius=25

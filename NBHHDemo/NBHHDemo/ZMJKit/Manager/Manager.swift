@@ -10,6 +10,6 @@ import UIKit
 
 //总的请求地址
 let HTTPAPI_HOST_NAME = "http://211.149.244.248:8032/"
-
+let NBHHBACK_ITEM_NAME = "button_arrow_left"//统一返回按钮
 
 let HTTPAPI_LOGIN_NAME = "user/login" //登录Api

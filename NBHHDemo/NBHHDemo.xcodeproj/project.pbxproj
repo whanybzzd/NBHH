@@ -24,6 +24,7 @@
 		885316B320DB8A8600CC9EA2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B220DB8A8600CC9EA2 /* LoginViewModel.swift */; };
 		885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B420DB8A8E00CC9EA2 /* LoginView.swift */; };
 		885316B820DB8CF800CC9EA2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B720DB8CF800CC9EA2 /* BaseViewController.swift */; };
+		885316BA20DB9F0B00CC9EA2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B920DB9F0B00CC9EA2 /* TestViewController.swift */; };
 		B9CEF551BE74CA98EAF82D37 /* Pods_NBHHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BB95EED29EF6726E6B2CB /* Pods_NBHHDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		885316B220DB8A8600CC9EA2 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		885316B420DB8A8E00CC9EA2 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		885316B720DB8CF800CC9EA2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		885316B920DB9F0B00CC9EA2 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E802C2266EBB95D9EB54E0B9 /* Pods-NBHHDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBHHDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBHHDemo/Pods-NBHHDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EF8BB95EED29EF6726E6B2CB /* Pods_NBHHDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBHHDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 				8853168820DB853600CC9EA2 /* NBHHDemo.xcdatamodeld */,
 				8853169720DB886300CC9EA2 /* NBHH */,
 				8853169620DB87FE00CC9EA2 /* ZMJKit */,
+				885316B920DB9F0B00CC9EA2 /* TestViewController.swift */,
 			);
 			path = NBHHDemo;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				8853168220DB853600CC9EA2 /* AppDelegate.swift in Sources */,
 				885316A520DB8A2000CC9EA2 /* AFColor.swift in Sources */,
 				885316B320DB8A8600CC9EA2 /* LoginViewModel.swift in Sources */,
+				885316BA20DB9F0B00CC9EA2 /* TestViewController.swift in Sources */,
 				885316AE20DB8A3700CC9EA2 /* Manager.swift in Sources */,
 				885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */,
 				885316A620DB8A2000CC9EA2 /* ExtensionString.swift in Sources */,
@@ -506,7 +510,10 @@
 				DEVELOPMENT_TEAM = 5G4LN66PPW;
 				INFOPLIST_FILE = NBHHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.NBHHDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NBHHDemo/ZMJKit/OC/Bridging-head.h";
@@ -524,7 +531,10 @@
 				DEVELOPMENT_TEAM = 5G4LN66PPW;
 				INFOPLIST_FILE = NBHHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.NBHHDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NBHHDemo/ZMJKit/OC/Bridging-head.h";
