@@ -7,19 +7,53 @@
 //
 
 import UIKit
-
+import SnapKit
+import ReactiveSwift
+import HandyJSON
+import SwiftyJSON
 class ViewController: UIViewController {
-
+    let loginView=LoginView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        initSubView()
+        racInitSubView()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    //UI
+    func initSubView() {
+        
+        
+        view.addSubview(loginView)
+        loginView.snp.makeConstraints { (make) in
+            
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, 0, 0))
+        }
+        
+        
     }
-
-
+    
+    //登录逻辑处理
+    func racInitSubView() {
+        
+        self.loginView.buttonClick.reactive.controlEvents(.touchUpInside).observeValues { (button) in
+            
+            LoginViewModel.sharedInstance.loginResult(username: "lw", password: "666666", nextPageTrigger: SignalProducer.empty)
+                .on(value: { response in
+                    
+                    //只能在这个地方转换TODO:请求层转换的时候回报错，估计是swift机制不允许
+                    let json=JSON(response)
+                    let jsonModel=JSONDeserializer<UserMessage>.deserializeFrom(json: json.description,designatedPath:"data")
+                    print("res:\(String(describing: jsonModel!.nickname))")
+                })
+                .on(failed:{error in
+                    
+                    print("错误:\(error)")
+                })
+                .start()
+        }
+        
+    }
 }
 
