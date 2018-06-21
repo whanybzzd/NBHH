@@ -49,6 +49,7 @@ class ViewController: BaseViewController {
                     let jsonModel=JSONDeserializer<UserMessage>.deserializeFrom(json: json.description,designatedPath:"data")
                     print("res:\(String(describing: jsonModel!.nickname))")
                     KRProgressHUD.dismiss()
+                    print("")
                 })
                 .on(failed:{error in
                     
