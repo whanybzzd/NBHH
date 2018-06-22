@@ -7,9 +7,7 @@
 //
 
 import UIKit
-
 class TestViewController: BaseTableViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,11 +16,21 @@ class TestViewController: BaseTableViewController {
         self.navigationItem.title=self.params["title"] as? String
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
+        
+    }
+    
+    override func refreshController() -> Bool {
+        
+        return true
+    }
+    override func refreshLoadMore() -> Bool {
+    
+        return true
     }
     
     override func cellCount() -> Int {
         
-        return 20
+        return self.dataArray.count
     }
     override func clickedCell(object: Any, atIndexPath: IndexPath) {
         

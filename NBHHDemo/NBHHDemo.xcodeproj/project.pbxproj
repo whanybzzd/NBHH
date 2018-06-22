@@ -24,7 +24,6 @@
 		885316AA20DB8A2C00CC9EA2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316A820DB8A2C00CC9EA2 /* Model.swift */; };
 		885316AD20DB8A3700CC9EA2 /* AFNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316AB20DB8A3700CC9EA2 /* AFNManager.swift */; };
 		885316AE20DB8A3700CC9EA2 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316AC20DB8A3700CC9EA2 /* Manager.swift */; };
-		885316B320DB8A8600CC9EA2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B220DB8A8600CC9EA2 /* LoginViewModel.swift */; };
 		885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B420DB8A8E00CC9EA2 /* LoginView.swift */; };
 		885316B820DB8CF800CC9EA2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B720DB8CF800CC9EA2 /* BaseViewController.swift */; };
 		885316BA20DB9F0B00CC9EA2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B920DB9F0B00CC9EA2 /* TestViewController.swift */; };
@@ -55,7 +54,6 @@
 		885316A820DB8A2C00CC9EA2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		885316AB20DB8A3700CC9EA2 /* AFNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNManager.swift; sourceTree = "<group>"; };
 		885316AC20DB8A3700CC9EA2 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		885316B220DB8A8600CC9EA2 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		885316B420DB8A8E00CC9EA2 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		885316B720DB8CF800CC9EA2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		885316B920DB9F0B00CC9EA2 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 			children = (
 				885316B020DB8A7E00CC9EA2 /* View */,
 				885316B120DB8A7E00CC9EA2 /* ViewController */,
-				885316AF20DB8A7D00CC9EA2 /* ViewModel */,
 			);
 			path = NBHH;
 			sourceTree = "<group>";
@@ -186,14 +183,6 @@
 				885316AC20DB8A3700CC9EA2 /* Manager.swift */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		885316AF20DB8A7D00CC9EA2 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				885316B220DB8A8600CC9EA2 /* LoginViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		885316B020DB8A7E00CC9EA2 /* View */ = {
@@ -336,6 +325,8 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ZVRefreshing/ZVRefreshing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -351,6 +342,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZVRefreshing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -373,7 +366,6 @@
 				8853169F20DB88A500CC9EA2 /* StorageManager.m in Sources */,
 				8853168220DB853600CC9EA2 /* AppDelegate.swift in Sources */,
 				885316A520DB8A2000CC9EA2 /* AFColor.swift in Sources */,
-				885316B320DB8A8600CC9EA2 /* LoginViewModel.swift in Sources */,
 				884A8E6320DC9AD1007CF80C /* BaseTableViewController.swift in Sources */,
 				884A8E6820DCA208007CF80C /* BaseRefreshViewController.swift in Sources */,
 				885316BA20DB9F0B00CC9EA2 /* TestViewController.swift in Sources */,

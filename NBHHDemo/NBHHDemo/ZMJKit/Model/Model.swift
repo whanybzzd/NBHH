@@ -10,7 +10,7 @@ class Model: HandyJSON {
    
     var status: Int?
     var info: String=""
-    var data:AnyObject?
+    var data:Any!
     
    public required init() {
         
@@ -32,3 +32,17 @@ class UserMessage:HandyJSON {
     }
 }
 
+class CustomerList:HandyJSON {
+    
+    var name:String=""
+    var id:String=""
+    var mobile:String=""
+    var address:Int?
+    var marriage_type:String=""
+    var card_number:String=""
+    var birthday:String=""
+    var sex:String=""
+    public required init() {
+        
+    }
+}

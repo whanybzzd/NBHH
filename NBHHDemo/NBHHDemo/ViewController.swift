@@ -40,9 +40,8 @@ class ViewController: BaseViewController {
         
         self.loginView.buttonClick.reactive.controlEvents(.touchUpInside).observeValues { (button) in
             
-            
             KRProgressHUD.show()
-            LoginViewModel.sharedInstance.loginResult(username: "lw", password: "666666", nextPageTrigger: SignalProducer.empty)
+            AFNManager.sharedInstance.requestResult(url:HTTPAPI_LOGIN_NAME,params:["username":"lw","password":"666666"],method: .post)
                 .on(value: { response in
                     
                     //只能在这个地方转换TODO:请求层转换的时候回报错，估计是swift机制不允许

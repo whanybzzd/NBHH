@@ -20,3 +20,4 @@ let HTTPAPI_HOST_NAME = "http://211.149.244.248:8032/"
 
 
 let HTTPAPI_LOGIN_NAME = "user/login" //登录Api
+let HTTPAPI_CUSTOMER_NAME = "customer/list"//获取客户列表

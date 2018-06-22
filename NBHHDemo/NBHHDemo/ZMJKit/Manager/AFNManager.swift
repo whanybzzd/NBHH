@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 import ReactiveSwift
 import Result
+import HandyJSON
 private let ManagerWorkRequestShareInstance=AFNManager()
 //属性设置
 class AFNManager {
@@ -26,32 +27,51 @@ class AFNManager {
 
 extension AFNManager{
     
-    //get请求
-    func get(url:String,params:[String:Any])->SignalProducer<Any, NetworkError> {
+    
+    
+    
+    func requestResult(url:String,params:[String:Any],method:HTTPMethod)->SignalProducer<Any,NetworkError>{
         
-        return SignalProducer {observer,disponsable in
+        
+        return SignalProducer<Any,NetworkError>{ observer, disposable in
             
             
-            self.httpRequest(url: url, params: params, method: .get, success: { (responseObject) in
+            let firstSearch = SignalProducer<(), NetworkError>(value: ())
+            let load = firstSearch.concat(SignalProducer.empty)
+            load.on(value:{
                 
-                observer.send(value: responseObject)
-                observer.sendCompleted()
-            }, failure: { (message,error) in
-                
-                observer.send(error: NetworkError(error: error as NSError))
-            })
-            
+                self.result(url: url, params:params,method: method)
+                    .start({event in
+                        
+                        switch event{
+                            
+                        case.value(let value):
+                            
+                            observer.send(value: value)
+                            observer.sendCompleted()
+                            
+                        case .failed(let error):
+                            observer.send(error: error)
+                            
+                        case .completed:
+                            break
+                        case .interrupted:
+                            observer.sendInterrupted()
+                        }
+                    })
+            }).start()
         }
     }
     
     
-    //post请求
-    func post(url:String,params:[String:Any])->SignalProducer<Any, NetworkError> {
+    
+    //result请求
+   private func result(url:String,params:[String:Any],method:HTTPMethod)->SignalProducer<Any, NetworkError> {
         
         return SignalProducer {observer,disponsable in
             
             
-            self.httpRequest(url: url, params: params, method: .post, success: { (responseObject) in
+            self.httpRequest(url: url, params: params, method: method, success: { (responseObject) in
 
                 observer.send(value: responseObject)
                 observer.sendCompleted()
@@ -74,8 +94,13 @@ extension AFNManager{
             switch responseObject.result{
             case .success(let value):
                 let json=JSON(value)
-                success(json as AnyObject)
-                
+                let jsonModel=JSONDeserializer<Model>.deserializeFrom(json: json.description)
+                if 1==jsonModel?.status{
+                    
+                    success(jsonModel?.data as AnyObject)
+                }else{
+                    failure(((jsonModel?.info)!,Error.self as! Error))
+                }
             case .failure(let error):
                 failure(("请求错误",error))
             }

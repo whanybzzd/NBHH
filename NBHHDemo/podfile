@@ -6,6 +6,7 @@ target 'NBHHDemo' do
     #-- OC库
     pod 'IQKeyboardManager'
 
+    pod 'ZVRefreshing'
     pod "KRProgressHUD"
     pod 'ReactiveCocoa'
     pod 'HandyJSON', '~> 4.1.1'
