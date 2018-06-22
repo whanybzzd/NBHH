@@ -15,6 +15,8 @@ class LoginView: UIView {
     lazy var userNameTextField:UITextField=UITextField()
     lazy var passwordTextField:UITextField=UITextField()
     lazy var buttonClick:UIButton=UIButton()
+    lazy var registerlabel:UILabel=UILabel()
+    
     
     override init(frame:CGRect){
         super.init(frame: frame)
@@ -37,12 +39,25 @@ class LoginView: UIView {
             
             return (self.userNameTextField.text?.count)!>=5
         })
+        validUsernameSignal.observeValues { (backgroundColor) in
+            
+            self.userNameTextField.textColor = backgroundColor ? UIColor.colorWithHexString("#333333") : UIColor.red
+        }
+        
+        
         
         let validUserpasswordSignal=passwordTextField.reactive.continuousTextValues.map({
             text in
             
             return (self.passwordTextField.text?.count)!>=5
         })
+        
+        validUserpasswordSignal.observeValues { (backgroundColor) in
+            
+            self.passwordTextField.textColor = backgroundColor ? UIColor.colorWithHexString("#333333") : UIColor.red
+        }
+        
+        
         Signal.combineLatest(validUsernameSignal, validUserpasswordSignal).map({
             (isValidUsername,isValidPassword) in
             
@@ -106,7 +121,7 @@ class LoginView: UIView {
         self.addSubview(buttonClick)
         buttonClick .setTitle("登录", for: UIControlState.normal)
         buttonClick.backgroundColor=UIColor.colorWithHexString("#d5d6db")
-        //buttonClick.isEnabled=false
+        buttonClick.isEnabled=false
         buttonClick.setTitleColor(UIColor.white, for: UIControlState.normal)
         buttonClick.titleLabel?.font=UIFont.systemFont(ofSize: 15)
         buttonClick.layer.cornerRadius=25
@@ -117,6 +132,20 @@ class LoginView: UIView {
             make.height.equalTo(50)
             make.top.equalTo(passwordTextField.snp.bottom).offset(30)
         }
+        
+        //注册label
+        self.addSubview(registerlabel)
+        registerlabel.text="注册"
+        registerlabel.isUserInteractionEnabled=true
+        registerlabel.font=UIFont.systemFont(ofSize: 15)
+        registerlabel.textColor=UIColor.red
+        registerlabel.snp.makeConstraints { (make) in
+            
+            make.centerX.equalTo(self)
+            make.top.equalTo(buttonClick.snp.bottom).offset(20)
+            make.height.equalTo(15)
+        }
+        
         
     }
 }

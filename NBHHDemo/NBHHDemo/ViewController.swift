@@ -41,25 +41,34 @@ class ViewController: BaseViewController {
         self.loginView.buttonClick.reactive.controlEvents(.touchUpInside).observeValues { (button) in
             
             
-            self.pushViewController(className: "TestViewController", withParams: ["title":"首页"])
-            
-//            KRProgressHUD.show()
-//            LoginViewModel.sharedInstance.loginResult(username: "lw", password: "666666", nextPageTrigger: SignalProducer.empty)
-//                .on(value: { response in
-//
-//                    //只能在这个地方转换TODO:请求层转换的时候回报错，估计是swift机制不允许
-//                    let json=JSON(response)
-//                    let jsonModel=JSONDeserializer<UserMessage>.deserializeFrom(json: json.description,designatedPath:"data")
-//                    print("res:\(String(describing: jsonModel!.nickname))")
-//                    KRProgressHUD.dismiss()
-//                })
-//                .on(failed:{error in
-//
-//                    print("错误:\(error)")
-//                    KRProgressHUD.showError()
-//                })
-//                .start()
+            KRProgressHUD.show()
+            LoginViewModel.sharedInstance.loginResult(username: "lw", password: "666666", nextPageTrigger: SignalProducer.empty)
+                .on(value: { response in
+                    
+                    //只能在这个地方转换TODO:请求层转换的时候回报错，估计是swift机制不允许
+                    let json=JSON(response)
+                    let jsonModel=JSONDeserializer<UserMessage>.deserializeFrom(json: json.description,designatedPath:"data")
+                    print("res:\(String(describing: jsonModel!.nickname))")
+                    KRProgressHUD.dismiss()
+                })
+                .on(failed:{error in
+                    
+                    print("错误:\(error)")
+                    KRProgressHUD.showError()
+                })
+                .start()
         }
+        
+        //label点击事件
+        let registerTapClick=UITapGestureRecognizer.init()
+        registerTapClick.reactive.stateChanged.observeValues { (tap) in
+            
+            self.pushViewController(className: "TestViewController", withParams: ["title":"首页"])
+        }
+        self.loginView.registerlabel.addGestureRecognizer(registerTapClick)
+        
+        
+        
         
     }
 }

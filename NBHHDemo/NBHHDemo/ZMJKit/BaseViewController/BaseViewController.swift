@@ -10,13 +10,26 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
-    var params:[String:Any]=[String:Any]()
+    let statusbarHeight = UIApplication.shared.statusBarFrame.height //获取statusBar的高度
+    var height:CGFloat?
+    
+    var _params=[String:Any]()
+    var params:[String:Any]{
+        
+        set{
+            _params=newValue
+        }
+        get{
+            
+            return _params
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        height=statusbarHeight+(self.navigationController?.navigationBar.frame.size.height)!
     }
-
+    
     
 }
 
@@ -33,13 +46,10 @@ extension BaseViewController{
         
         self.view.endEditing(true)
         let newViewController=self.createViewControlelr(className: className)
-
-        let mutableDictionary=params
-        if (newViewController?.isKind(of: BaseViewController.self))!{
-
-            self.params=mutableDictionary
-           
-        }
+        
+        let newViewVC=newViewController as! BaseViewController
+        
+        newViewVC.params=params
         newViewController?.navigationItem.leftBarButtonItem=UIBarButtonItem.init(image: UIImage.init(named: NBHHBACK_ITEM_NAME), style: .plain, target: self, action: #selector(backItemClick))
         self.navigationController?.pushViewController(newViewController!, animated: true)
     }
@@ -49,26 +59,26 @@ extension BaseViewController{
         self.navigationController?.popViewController(animated: true)
     }
     
-   private func createViewControlelr(className:String)->UIViewController? {
-    // 1.获取命名空间
-    guard let clsName = Bundle.main.infoDictionary!["CFBundleExecutable"] else {
-        print("命名空间不存在")
-        return nil
-    }
-    // 2.通过命名空间和类名转换成类
-    let cls : AnyClass? = NSClassFromString((clsName as! String) + "." + className)
-    
-    // swift 中通过Class创建一个对象,必须告诉系统Class的类型
-    guard let clsType = cls as? UIViewController.Type else {
-        print("无法转换成UITableViewController")
-        return nil
-    }
-    
-    // 3.通过Class创建对象
-    let childController = clsType.init()
-    childController.hidesBottomBarWhenPushed=true
-    return childController
-    
+    private func createViewControlelr(className:String)->UIViewController? {
+        // 1.获取命名空间
+        guard let clsName = Bundle.main.infoDictionary!["CFBundleExecutable"] else {
+            print("命名空间不存在")
+            return nil
+        }
+        // 2.通过命名空间和类名转换成类
+        let cls : AnyClass? = NSClassFromString((clsName as! String) + "." + className)
+        
+        // swift 中通过Class创建一个对象,必须告诉系统Class的类型
+        guard let clsType = cls as? UIViewController.Type else {
+            print("无法转换成UIViewController")
+            return nil
+        }
+        
+        // 3.通过Class创建对象
+        let childController = clsType.init()
+        childController.hidesBottomBarWhenPushed=true
+        return childController
+        
     }
     
 }
