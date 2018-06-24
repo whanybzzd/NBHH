@@ -94,12 +94,11 @@ extension AFNManager{
             switch responseObject.result{
             case .success(let value):
                 let json=JSON(value)
-                let jsonModel=JSONDeserializer<Model>.deserializeFrom(json: json.description)
-                if 1==jsonModel?.status{
+                if 1==Int("\(json["status"])"){
                     
-                    success(jsonModel?.data as AnyObject)
+                    success(json["data"] as AnyObject)
                 }else{
-                    failure(((jsonModel?.info)!,Error.self as! Error))
+                    failure(("\(json["info"])",responseObject.result.error!))
                 }
             case .failure(let error):
                 failure(("请求错误",error))

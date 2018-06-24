@@ -20,7 +20,7 @@ class BaseTableViewController: BaseRefreshViewController,UITableViewDelegate,UIT
         super.viewDidLoad()
 
         
-        tableView=UITableView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT), style: .plain)
+        tableView=UITableView(frame: CGRect(x: 0, y: height!, width: SCREEN_WIDTH, height: SCREEN_HEIGHT-height!), style: .plain)
         tableView.tableHeaderView=UIView.init()
         tableView.tableFooterView=UIView.init()
         tableView.delegate=self
@@ -71,28 +71,7 @@ class BaseTableViewController: BaseRefreshViewController,UITableViewDelegate,UIT
     
     @objc func refreshHeaderHandler(_ refreshFooter: ZVRefreshFooter?) {
         
-        print("头部刷新")
-        AFNManager.sharedInstance.requestResult(url:HTTPAPI_CUSTOMER_NAME,params:["companyId":"11","id":"21","name":""],method: .post)
-            .on(value: { response in
-                
-                let json=JSON(response)
-                
-               
-//                print("res:\(String(describing: jsonModel!.nickname))")
-                print("json:\(json)")
-//                for item in json{
-//
-//                    let jsonModel=JSONDeserializer<CustomerList>.deserializeFrom(json: item)
-//                }
-                
-                
-            })
-            .on(failed:{error in
-                
-                print("错误:\(error)")
-                self.dataArray.removeAll()
-            })
-            .start()
+     
     }
     
     
@@ -117,18 +96,35 @@ extension BaseTableViewController{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell=self.layoutCellWithData(object: AnyObject.self, atIndexPath: indexPath)
+        var objectModel:Any?=nil
+        if indexPath.row<self.dataArray.count {
+            
+            objectModel=self.dataArray[indexPath.row]
+        }
+        
+        let cell=self.layoutCellWithData(object: objectModel!, atIndexPath: indexPath)
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        let rowHeight=self.tableViewCellHeightForData(object: AnyObject.self, atIndexPath: indexPath)
+        var objectModel:Any?=nil
+        if indexPath.row<self.dataArray.count {
+            
+            objectModel=self.dataArray[indexPath.row]
+        }
+        let rowHeight=self.tableViewCellHeightForData(object: objectModel!, atIndexPath: indexPath)
         return rowHeight
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        self.clickedCell(object: AnyObject.self, atIndexPath: indexPath)
+        var objectModel:Any?=nil
+        if indexPath.row<self.dataArray.count {
+            
+            objectModel=self.dataArray[indexPath.row]
+        }
+        self.clickedCell(object: objectModel!, atIndexPath: indexPath)
     }
 }

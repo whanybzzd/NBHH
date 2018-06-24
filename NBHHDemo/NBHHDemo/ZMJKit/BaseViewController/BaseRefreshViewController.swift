@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import HandyJSON
 class BaseRefreshViewController: BaseViewController {
 
     var dataArray:Array<Any>=Array<Any>()
@@ -32,8 +32,6 @@ extension BaseRefreshViewController{
         
         return false
     }
-    
-    
    @objc func layoutCellWithData(object:Any,atIndexPath:IndexPath) -> UITableViewCell {
         
         return UITableViewCell.init()
