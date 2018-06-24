@@ -26,7 +26,8 @@
 		885316AE20DB8A3700CC9EA2 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316AC20DB8A3700CC9EA2 /* Manager.swift */; };
 		885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B420DB8A8E00CC9EA2 /* LoginView.swift */; };
 		885316B820DB8CF800CC9EA2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B720DB8CF800CC9EA2 /* BaseViewController.swift */; };
-		885316BA20DB9F0B00CC9EA2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B920DB9F0B00CC9EA2 /* TestViewController.swift */; };
+		9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */; };
+		9A077ADE20DFBDD500799922 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077ADD20DFBDD500799922 /* TestViewController.swift */; };
 		B9CEF551BE74CA98EAF82D37 /* Pods_NBHHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BB95EED29EF6726E6B2CB /* Pods_NBHHDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +57,8 @@
 		885316AC20DB8A3700CC9EA2 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		885316B420DB8A8E00CC9EA2 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		885316B720DB8CF800CC9EA2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		885316B920DB9F0B00CC9EA2 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		9A077ADD20DFBDD500799922 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E802C2266EBB95D9EB54E0B9 /* Pods-NBHHDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBHHDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBHHDemo/Pods-NBHHDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EF8BB95EED29EF6726E6B2CB /* Pods_NBHHDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBHHDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,7 +121,6 @@
 				8853168820DB853600CC9EA2 /* NBHHDemo.xcdatamodeld */,
 				8853169720DB886300CC9EA2 /* NBHH */,
 				8853169620DB87FE00CC9EA2 /* ZMJKit */,
-				885316B920DB9F0B00CC9EA2 /* TestViewController.swift */,
 			);
 			path = NBHHDemo;
 			sourceTree = "<group>";
@@ -140,8 +141,8 @@
 		8853169720DB886300CC9EA2 /* NBHH */ = {
 			isa = PBXGroup;
 			children = (
+				9A077ADA20DFA92800799922 /* ViewController */,
 				885316B020DB8A7E00CC9EA2 /* View */,
-				885316B120DB8A7E00CC9EA2 /* ViewController */,
 			);
 			path = NBHH;
 			sourceTree = "<group>";
@@ -193,13 +194,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		885316B120DB8A7E00CC9EA2 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		885316B620DB8CE900CC9EA2 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +202,15 @@
 				884A8E6720DCA208007CF80C /* BaseRefreshViewController.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		9A077ADA20DFA92800799922 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A077ADD20DFBDD500799922 /* TestViewController.swift */,
+				9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		F68505475F5BB8F4ECDDC5C3 /* Pods */ = {
@@ -358,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				885316AA20DB8A2C00CC9EA2 /* Model.swift in Sources */,
+				9A077ADE20DFBDD500799922 /* TestViewController.swift in Sources */,
 				885316AD20DB8A3700CC9EA2 /* AFNManager.swift in Sources */,
 				8853168A20DB853600CC9EA2 /* NBHHDemo.xcdatamodeld in Sources */,
 				885316A920DB8A2C00CC9EA2 /* NetworkError.swift in Sources */,
@@ -368,7 +372,7 @@
 				885316A520DB8A2000CC9EA2 /* AFColor.swift in Sources */,
 				884A8E6320DC9AD1007CF80C /* BaseTableViewController.swift in Sources */,
 				884A8E6820DCA208007CF80C /* BaseRefreshViewController.swift in Sources */,
-				885316BA20DB9F0B00CC9EA2 /* TestViewController.swift in Sources */,
+				9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */,
 				885316AE20DB8A3700CC9EA2 /* Manager.swift in Sources */,
 				884A8E6620DC9C77007CF80C /* Enum.swift in Sources */,
 				885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */,

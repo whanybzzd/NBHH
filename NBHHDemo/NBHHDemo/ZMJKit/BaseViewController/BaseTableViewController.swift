@@ -47,6 +47,11 @@ class BaseTableViewController: BaseRefreshViewController,UITableViewDelegate,UIT
             tableView.refreshHeader = flatHeader
         }
       
+        //是否一进入页面就刷新
+        if self.refreshEndController(){
+            
+            self.tableView.refreshHeader?.beginRefreshing()
+        }
         //加载更多
         if self.refreshLoadMore(){
             
@@ -65,7 +70,7 @@ class BaseTableViewController: BaseRefreshViewController,UITableViewDelegate,UIT
     }
     @objc func refreshFooterHandler(_ refreshFooter: ZVRefreshFooter?) {
         
-        print("底部刷新")
+        
       
     }
     

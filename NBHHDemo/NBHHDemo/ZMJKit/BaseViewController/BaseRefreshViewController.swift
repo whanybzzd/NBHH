@@ -32,6 +32,11 @@ extension BaseRefreshViewController{
         
         return false
     }
+    //是否一进入页面就刷新
+    @objc func refreshEndController() -> Bool {
+        
+        return false
+    }
    @objc func layoutCellWithData(object:Any,atIndexPath:IndexPath) -> UITableViewCell {
         
         return UITableViewCell.init()
