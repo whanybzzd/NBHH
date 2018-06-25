@@ -15,6 +15,7 @@ class TestTableViewCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.selectionStyle=UITableViewCellSelectionStyle.none
         initSubView()
     }
     

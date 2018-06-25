@@ -37,6 +37,7 @@ extension BaseRefreshViewController{
         
         return false
     }
+    
    @objc func layoutCellWithData(object:Any,atIndexPath:IndexPath) -> UITableViewCell {
         
         return UITableViewCell.init()
@@ -51,4 +52,5 @@ extension BaseRefreshViewController{
         
         return self.dataArray.count
     }
+    
 }

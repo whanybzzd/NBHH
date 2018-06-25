@@ -94,6 +94,8 @@ extension AFNManager{
             switch responseObject.result{
             case .success(let value):
                 let json=JSON(value)
+                //简要说明:
+                //HandyJSON无法解析（）这样的数组，只能设别[]的数组，所以此处就直接取值返回
                 if 1==Int("\(json["status"])"){
                     
                     success(json["data"] as AnyObject)

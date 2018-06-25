@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		881D87E020E07E23005B1454 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87DF20E07E23005B1454 /* TestViewController.swift */; };
 		884A8E6320DC9AD1007CF80C /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6220DC9AD1007CF80C /* BaseTableViewController.swift */; };
 		884A8E6620DC9C77007CF80C /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6520DC9C77007CF80C /* Enum.swift */; };
 		884A8E6820DCA208007CF80C /* BaseRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6720DCA208007CF80C /* BaseRefreshViewController.swift */; };
@@ -27,12 +28,12 @@
 		885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B420DB8A8E00CC9EA2 /* LoginView.swift */; };
 		885316B820DB8CF800CC9EA2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B720DB8CF800CC9EA2 /* BaseViewController.swift */; };
 		9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */; };
-		9A077ADE20DFBDD500799922 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077ADD20DFBDD500799922 /* TestViewController.swift */; };
 		B9CEF551BE74CA98EAF82D37 /* Pods_NBHHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BB95EED29EF6726E6B2CB /* Pods_NBHHDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BFE02F5C13AF500DE664400 /* Pods-NBHHDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBHHDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBHHDemo/Pods-NBHHDemo.release.xcconfig"; sourceTree = "<group>"; };
+		881D87DF20E07E23005B1454 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		884A8E6220DC9AD1007CF80C /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		884A8E6520DC9C77007CF80C /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		884A8E6720DCA208007CF80C /* BaseRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRefreshViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		885316B420DB8A8E00CC9EA2 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		885316B720DB8CF800CC9EA2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
-		9A077ADD20DFBDD500799922 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E802C2266EBB95D9EB54E0B9 /* Pods-NBHHDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBHHDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBHHDemo/Pods-NBHHDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EF8BB95EED29EF6726E6B2CB /* Pods_NBHHDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBHHDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -207,8 +207,8 @@
 		9A077ADA20DFA92800799922 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9A077ADD20DFBDD500799922 /* TestViewController.swift */,
 				9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */,
+				881D87DF20E07E23005B1454 /* TestViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -361,7 +361,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				885316AA20DB8A2C00CC9EA2 /* Model.swift in Sources */,
-				9A077ADE20DFBDD500799922 /* TestViewController.swift in Sources */,
 				885316AD20DB8A3700CC9EA2 /* AFNManager.swift in Sources */,
 				8853168A20DB853600CC9EA2 /* NBHHDemo.xcdatamodeld in Sources */,
 				885316A920DB8A2C00CC9EA2 /* NetworkError.swift in Sources */,
@@ -377,6 +376,7 @@
 				884A8E6620DC9C77007CF80C /* Enum.swift in Sources */,
 				885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */,
 				885316A620DB8A2000CC9EA2 /* ExtensionString.swift in Sources */,
+				881D87E020E07E23005B1454 /* TestViewController.swift in Sources */,
 				8853169E20DB88A500CC9EA2 /* FileUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

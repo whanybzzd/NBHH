@@ -34,7 +34,7 @@ DEPENDENCIES:
   - ZVRefreshing
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - HandyJSON
     - IQKeyboardManager
@@ -68,4 +68,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 0201d3b52850bd6bbd24ee09180d216d8a2d65d5
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0
