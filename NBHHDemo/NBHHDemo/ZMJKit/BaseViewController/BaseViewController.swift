@@ -36,6 +36,7 @@ class BaseViewController: UIViewController {
 
 extension BaseViewController{
     
+    //push页面跳转
     func pushViewController(className:String) -> Void {
         
         pushViewController(className: className, withParams: [:])
@@ -80,5 +81,45 @@ extension BaseViewController{
         return childController
         
     }
+    
+    //present跳转
+    func presentingViewController(className:String) -> Void {
+        
+        presentingViewController(className: className, params: [:])
+    }
+    
+    func presentingViewController(className:String,params:[String:Any]) -> Void {
+    
+        self.view.endEditing(true)
+        let newViewController=self.createViewControlelr(className: className)
+        
+        let newViewVC=newViewController as! BaseViewController
+        
+        newViewVC.params=params
+        
+        let navigationController=MLNavigationController(rootViewController: newViewController!)
+        self.navigationController?.present(navigationController, animated: true)
+    }
+    
+    func dismissPrestedViewController() -> Void {
+        
+        if (self.presentedViewController != nil) {
+            
+            self.presentedViewController?.dismiss(animated: true, completion: {
+            
+            })
+        }
+    }
+    func dismissPrestingViewController() -> Void {
+        
+        if (self.presentingViewController != nil) {
+            
+            self.presentingViewController?.dismiss(animated: true, completion: {
+                
+            })
+        }
+    }
+    
+    
     
 }

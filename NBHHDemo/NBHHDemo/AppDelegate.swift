@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        //UserDefaults.standard.removeObject(forKey: kCachedUserModel)
         self.window=UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor=UIColor.white
         self.window?.makeKeyAndVisible()
@@ -46,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabItemSeletedImageArray=["首页选中","更多选中"]
         let tabItemNamesArray=["首页","更多"]
         var viewControllers:Array<Any>=Array<Any>()
+       
         for (index,item) in tabClassArray.enumerated(){
             
             let contentController=self.createViewControlelr(className: item)
@@ -74,17 +76,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         // 2.通过命名空间和类名转换成类
         let cls : AnyClass? = NSClassFromString((clsName as! String) + "." + className)
-        
+
         // swift 中通过Class创建一个对象,必须告诉系统Class的类型
         guard let clsType = cls as? UIViewController.Type else {
             print("无法转换成UIViewController")
             return nil
         }
-        
+
         // 3.通过Class创建对象
         let childController = clsType.init()
         return childController
-        
+
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

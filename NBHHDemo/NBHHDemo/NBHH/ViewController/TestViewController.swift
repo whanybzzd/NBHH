@@ -57,15 +57,15 @@ class TestViewController: BaseTableViewController {
             .on(value: { response in
                 
                 let baseModel=[CustomerList].deserialize(from: (response as AnyObject).description)
-                baseModel?.forEach({model in
+                baseModel?.forEach({[weak self]model in
                     
-                    self.dataArray.append(model!)
+                    self?.dataArray.append(model!)
                 })
                 self.tableView.refreshHeader?.endRefreshing()
                 self.tableView.reloadData()
             })
-            .on(failed:{error in
-                self.tableView.refreshHeader?.endRefreshing()
+            .on(failed:{[weak self]error in
+                self?.tableView.refreshHeader?.endRefreshing()
                 print("错误:\(error)")
             })
             .start()

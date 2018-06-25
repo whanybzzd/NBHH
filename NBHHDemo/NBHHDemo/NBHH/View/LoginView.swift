@@ -37,11 +37,11 @@ class LoginView: UIView {
             
             text in
             
-            return (self.userNameTextField.text?.count)!>=5
+            return (text?.count)!>=5
         })
-        validUsernameSignal.observeValues { (backgroundColor) in
+        validUsernameSignal.observeValues {[weak self] (backgroundColor) in
             
-            self.userNameTextField.textColor = backgroundColor ? UIColor.colorWithHexString("#333333") : UIColor.red
+            self?.userNameTextField.textColor = backgroundColor ? UIColor.colorWithHexString("#333333") : UIColor.red
         }
         
         
@@ -49,12 +49,12 @@ class LoginView: UIView {
         let validUserpasswordSignal=passwordTextField.reactive.continuousTextValues.map({
             text in
             
-            return (self.passwordTextField.text?.count)!>=5
+            return (text?.count)!>=5
         })
         
-        validUserpasswordSignal.observeValues { (backgroundColor) in
+        validUserpasswordSignal.observeValues { [weak self](backgroundColor) in
             
-            self.passwordTextField.textColor = backgroundColor ? UIColor.colorWithHexString("#333333") : UIColor.red
+            self?.passwordTextField.textColor = backgroundColor ? UIColor.colorWithHexString("#333333") : UIColor.red
         }
         
         
@@ -62,10 +62,10 @@ class LoginView: UIView {
             (isValidUsername,isValidPassword) in
             
             return isValidUsername && isValidPassword
-        }).observeValues { (signal) in
+        }).observeValues {[weak self] (signal) in
             
-            self.buttonClick.backgroundColor = signal ? UIColor.colorWithHexString("#356cf9") : UIColor.colorWithHexString("#d5d6db")
-            self.buttonClick.isEnabled = signal
+            self?.buttonClick.backgroundColor = signal ? UIColor.colorWithHexString("#356cf9") : UIColor.colorWithHexString("#d5d6db")
+            self?.buttonClick.isEnabled = signal
         }
         
     }

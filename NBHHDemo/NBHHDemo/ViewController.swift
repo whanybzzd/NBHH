@@ -46,11 +46,13 @@ class ViewController: BaseViewController {
                     
                     //let json=JSON(response)
                     //let jsonModel=JSONDeserializer<UserMessage>.deserializeFrom(json: json.description)
-                    //StorageManager.sharedInstance().setConfigValue(json, forKey: kCachedUserModel)
                     UserDefaults.standard.set("success", forKey: kCachedUserModel)
                     UserDefaults.standard.synchronize()
-                    KRProgressHUD.dismiss()
-                    (UIApplication.shared.delegate as! AppDelegate) .setUpTabbarController()
+                    KRProgressHUD.dismiss({
+                        
+                        (UIApplication.shared.delegate as! AppDelegate) .setUpTabbarController()
+                    })
+                    
                 })
                 .on(failed:{error in
                     
@@ -62,9 +64,9 @@ class ViewController: BaseViewController {
         
         //label点击事件
         let registerTapClick=UITapGestureRecognizer.init()
-        registerTapClick.reactive.stateChanged.observeValues { (tap) in
+        registerTapClick.reactive.stateChanged.observeValues {[weak self] (tap) in
             
-            self.pushViewController(className: "TestViewController", withParams: ["title":"首页"])
+            self?.pushViewController(className: "TestViewController", withParams: ["title":"首页"])
         }
         self.loginView.registerlabel.addGestureRecognizer(registerTapClick)
         
@@ -72,5 +74,6 @@ class ViewController: BaseViewController {
         
         
     }
+  
 }
 

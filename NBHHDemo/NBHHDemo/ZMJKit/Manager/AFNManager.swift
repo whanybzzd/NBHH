@@ -55,7 +55,7 @@ extension AFNManager{
                             
                         case .completed:
                             break
-                        case .interrupted:
+                        case .interrupted://事件被打断了
                             observer.sendInterrupted()
                         }
                     })
