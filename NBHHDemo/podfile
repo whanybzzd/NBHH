@@ -5,6 +5,7 @@ use_frameworks!
 target 'NBHHDemo' do
     #-- OC库
     pod 'IQKeyboardManager'
+    pod 'SDCycleScrollView'
 
     pod 'ZVRefreshing'
     pod "KRProgressHUD"

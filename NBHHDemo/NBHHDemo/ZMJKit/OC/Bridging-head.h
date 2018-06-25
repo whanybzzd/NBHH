@@ -10,4 +10,7 @@
 #define Bridging_head_h
 
 #import "StorageManager.h"
+#import "MLNavigationController.h"
+#import <SDCycleScrollView/SDCycleScrollView.h>
+
 #endif /* Bridging_head_h */

@@ -12,6 +12,10 @@ import UIKit
 let NBHHBACK_ITEM_NAME = "button_arrow_left"//统一返回按钮
 let SCREEN_WIDTH = UIScreen.main.bounds.size.width//宽度
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height//高度
+let kCachedUserModel = "kCachedUserModel"//缓存数据的key
+//按照比例来适配
+let KSCREEN_WIDTH = SCREEN_WIDTH/375.0
+let KSCREEN_HEIGHT = SCREEN_HEIGHT/667.0
 
 
 

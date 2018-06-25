@@ -16,6 +16,11 @@ PODS:
   - ReactiveSwift (3.1.0):
     - Result (~> 3.2)
   - Result (3.2.4)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
   - SnapKit (4.0.0)
   - SwiftyJSON (4.1.0)
   - ZVActivityIndicatorView (0.1.2)
@@ -29,6 +34,7 @@ DEPENDENCIES:
   - KRProgressHUD
   - Moya
   - ReactiveCocoa
+  - SDCycleScrollView
   - SnapKit
   - SwiftyJSON (~> 4.1.0)
   - ZVRefreshing
@@ -45,6 +51,8 @@ SPEC REPOS:
     - ReactiveCocoa
     - ReactiveSwift
     - Result
+    - SDCycleScrollView
+    - SDWebImage
     - SnapKit
     - SwiftyJSON
     - ZVActivityIndicatorView
@@ -61,11 +69,13 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 476dae7ca790f40d30d186a1bd7ebae4290395d5
   ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   ZVActivityIndicatorView: 14668601b0616d2b749004d8fa42913fc813e151
   ZVRefreshing: a537440942dde41471f7ec6517735f1e8c38334b
 
-PODFILE CHECKSUM: 0201d3b52850bd6bbd24ee09180d216d8a2d65d5
+PODFILE CHECKSUM: f155d8d1e20efedc3877dbad611fbfe88c63fab2
 
 COCOAPODS: 1.5.0
