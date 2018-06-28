@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        //UserDefaults.standard.removeObject(forKey: kCachedUserModel)
+        
+        
         self.window=UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor=UIColor.white
         self.window?.makeKeyAndVisible()
@@ -36,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          self.window?.rootViewController=navc
     }
     func setUpTabbarController() -> Void {
-        
         self.window?.rootViewController=rootViewController()
     }
 

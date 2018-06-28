@@ -12,6 +12,8 @@ import SwiftyJSON
 import ReactiveSwift
 import Result
 import HandyJSON
+
+
 private let ManagerWorkRequestShareInstance=AFNManager()
 //属性设置
 class AFNManager {

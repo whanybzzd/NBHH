@@ -44,10 +44,9 @@ class ViewController: BaseViewController {
             AFNManager.sharedInstance.requestResult(url:HTTPAPI_LOGIN_NAME,params:["username":"lw","password":"666666"],method: .post)
                 .on(value: { response in
                     
-                    //let json=JSON(response)
-                    //let jsonModel=JSONDeserializer<UserMessage>.deserializeFrom(json: json.description)
-                    UserDefaults.standard.set("success", forKey: kCachedUserModel)
-                    UserDefaults.standard.synchronize()
+                    let json=JSON(response)
+                    let jsonModel=JSONDeserializer<UserMessage>.deserializeFrom(json: json.description)
+                    
                     KRProgressHUD.dismiss({
                         
                         (UIApplication.shared.delegate as! AppDelegate) .setUpTabbarController()
