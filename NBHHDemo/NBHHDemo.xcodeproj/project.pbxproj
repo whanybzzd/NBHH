@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		881D87E020E07E23005B1454 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87DF20E07E23005B1454 /* TestViewController.swift */; };
-		881D87E620E09535005B1454 /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881D87E520E09535005B1454 /* MLNavigationController.m */; };
 		881D87E820E097FD005B1454 /* TestOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87E720E097FD005B1454 /* TestOneViewController.swift */; };
 		881D87EA20E09809005B1454 /* TestTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87E920E09809005B1454 /* TestTwoViewController.swift */; };
 		881D87EF20E0B3B0005B1454 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87EE20E0B3B0005B1454 /* BaseTabBarController.swift */; };
@@ -35,14 +34,17 @@
 		885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B420DB8A8E00CC9EA2 /* LoginView.swift */; };
 		885316B820DB8CF800CC9EA2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B720DB8CF800CC9EA2 /* BaseViewController.swift */; };
 		9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */; };
+		9A6EFC7A20E515AA0085551E /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7820E515AA0085551E /* MLNavigationController.m */; };
+		9A6EFC7E20E51E500085551E /* ZZDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7B20E51E4F0085551E /* ZZDiskCache.swift */; };
+		9A6EFC7F20E51E500085551E /* ZZDiskCacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7C20E51E500085551E /* ZZDiskCacheHelper.swift */; };
+		9A6EFC8020E51E500085551E /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7D20E51E500085551E /* String+MD5.swift */; };
+		9A6EFC8220E51EFB0085551E /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC8120E51EFB0085551E /* Student.swift */; };
 		B9CEF551BE74CA98EAF82D37 /* Pods_NBHHDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8BB95EED29EF6726E6B2CB /* Pods_NBHHDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BFE02F5C13AF500DE664400 /* Pods-NBHHDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBHHDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBHHDemo/Pods-NBHHDemo.release.xcconfig"; sourceTree = "<group>"; };
 		881D87DF20E07E23005B1454 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		881D87E420E09535005B1454 /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
-		881D87E520E09535005B1454 /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
 		881D87E720E097FD005B1454 /* TestOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneViewController.swift; sourceTree = "<group>"; };
 		881D87E920E09809005B1454 /* TestTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTwoViewController.swift; sourceTree = "<group>"; };
 		881D87EE20E0B3B0005B1454 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,12 @@
 		885316B420DB8A8E00CC9EA2 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		885316B720DB8CF800CC9EA2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		9A6EFC7820E515AA0085551E /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
+		9A6EFC7920E515AA0085551E /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
+		9A6EFC7B20E51E4F0085551E /* ZZDiskCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZDiskCache.swift; sourceTree = "<group>"; };
+		9A6EFC7C20E51E500085551E /* ZZDiskCacheHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZDiskCacheHelper.swift; sourceTree = "<group>"; };
+		9A6EFC7D20E51E500085551E /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		9A6EFC8120E51EFB0085551E /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		E802C2266EBB95D9EB54E0B9 /* Pods-NBHHDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBHHDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBHHDemo/Pods-NBHHDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EF8BB95EED29EF6726E6B2CB /* Pods_NBHHDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBHHDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,15 +102,6 @@
 				EF8BB95EED29EF6726E6B2CB /* Pods_NBHHDemo.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		881D87E320E09535005B1454 /* MLNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				881D87E420E09535005B1454 /* MLNavigationController.h */,
-				881D87E520E09535005B1454 /* MLNavigationController.m */,
-			);
-			path = MLNavigationController;
 			sourceTree = "<group>";
 		};
 		884A8E6420DC9C64007CF80C /* Enum */ = {
@@ -172,7 +171,7 @@
 		8853169820DB888C00CC9EA2 /* OC */ = {
 			isa = PBXGroup;
 			children = (
-				881D87E320E09535005B1454 /* MLNavigationController */,
+				9A6EFC7720E515AA0085551E /* MLNavigationController */,
 				8853169920DB88A400CC9EA2 /* Bridging-head.h */,
 			);
 			path = OC;
@@ -192,6 +191,7 @@
 		885316A120DB8A1500CC9EA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9A6EFC8120E51EFB0085551E /* Student.swift */,
 				885316A820DB8A2C00CC9EA2 /* Model.swift */,
 				885316A720DB8A2C00CC9EA2 /* NetworkError.swift */,
 			);
@@ -203,6 +203,9 @@
 			children = (
 				885316AB20DB8A3700CC9EA2 /* AFNManager.swift */,
 				885316AC20DB8A3700CC9EA2 /* Manager.swift */,
+				9A6EFC7D20E51E500085551E /* String+MD5.swift */,
+				9A6EFC7B20E51E4F0085551E /* ZZDiskCache.swift */,
+				9A6EFC7C20E51E500085551E /* ZZDiskCacheHelper.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -238,6 +241,15 @@
 				881D87F220E0C258005B1454 /* TestOneHeadView.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9A6EFC7720E515AA0085551E /* MLNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				9A6EFC7820E515AA0085551E /* MLNavigationController.m */,
+				9A6EFC7920E515AA0085551E /* MLNavigationController.h */,
+			);
+			path = MLNavigationController;
 			sourceTree = "<group>";
 		};
 		F68505475F5BB8F4ECDDC5C3 /* Pods */ = {
@@ -392,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				885316AA20DB8A2C00CC9EA2 /* Model.swift in Sources */,
+				9A6EFC7E20E51E500085551E /* ZZDiskCache.swift in Sources */,
 				884CF03520E33B9500BFFAE2 /* ReactiveCocoaExtension.swift in Sources */,
 				885316AD20DB8A3700CC9EA2 /* AFNManager.swift in Sources */,
 				8853168A20DB853600CC9EA2 /* NBHHDemo.xcdatamodeld in Sources */,
@@ -402,9 +415,10 @@
 				8853168220DB853600CC9EA2 /* AppDelegate.swift in Sources */,
 				885316A520DB8A2000CC9EA2 /* AFColor.swift in Sources */,
 				881D87EA20E09809005B1454 /* TestTwoViewController.swift in Sources */,
+				9A6EFC7F20E51E500085551E /* ZZDiskCacheHelper.swift in Sources */,
 				884A8E6320DC9AD1007CF80C /* BaseTableViewController.swift in Sources */,
+				9A6EFC7A20E515AA0085551E /* MLNavigationController.m in Sources */,
 				884A8E6820DCA208007CF80C /* BaseRefreshViewController.swift in Sources */,
-				881D87E620E09535005B1454 /* MLNavigationController.m in Sources */,
 				9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */,
 				885316AE20DB8A3700CC9EA2 /* Manager.swift in Sources */,
 				884A8E6620DC9C77007CF80C /* Enum.swift in Sources */,
@@ -412,8 +426,10 @@
 				885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */,
 				881D87F720E0C8E8005B1454 /* TestOneView.swift in Sources */,
 				885316A620DB8A2000CC9EA2 /* ExtensionString.swift in Sources */,
+				9A6EFC8020E51E500085551E /* String+MD5.swift in Sources */,
 				881D87E820E097FD005B1454 /* TestOneViewController.swift in Sources */,
 				881D87E020E07E23005B1454 /* TestViewController.swift in Sources */,
+				9A6EFC8220E51EFB0085551E /* Student.swift in Sources */,
 				881D87F120E0BB41005B1454 /* TestOneTableViewCell.swift in Sources */,
 				881D87F320E0C258005B1454 /* TestOneHeadView.swift in Sources */,
 			);

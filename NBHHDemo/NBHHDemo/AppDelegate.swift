@@ -17,6 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+//        let homePath = NSHomeDirectory()
+//
+//        print(homePath)
+//
+//        let stu = Student()
+//        stu.name = "小王"
+//        stu.id = 1
+//        `$`.saveObj("xxxx", value: stu)
+//
+//        `$`.getObj("xx1x") { (obj) -> () in
+//            print("我日:\(obj)")
+//
+//            //         if let obj = obj as? Student{
+//            //            print("\(obj.id) , \(obj.name)")
+//            //         }
+//        }
+//
+//        `$`.deleteObj(key: "xxxx")//删除目录
         
         
         self.window=UIWindow.init(frame: UIScreen.main.bounds)
