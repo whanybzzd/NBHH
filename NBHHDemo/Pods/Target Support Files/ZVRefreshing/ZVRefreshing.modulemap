@@ -1,0 +1,6 @@
+framework module ZVRefreshing {
+  umbrella header "ZVRefreshing-umbrella.h"
+
+  export *
+  module * { export * }
+}

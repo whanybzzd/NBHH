@@ -1,0 +1,6 @@
+framework module Pods_NBHHDemo {
+  umbrella header "Pods-NBHHDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
