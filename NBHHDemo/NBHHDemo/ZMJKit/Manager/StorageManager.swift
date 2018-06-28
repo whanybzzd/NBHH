@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 private let sharedInstance=StorageManager()
 //属性设置
 class StorageManager {
@@ -174,6 +173,45 @@ extension StorageManager{
         return config[key] ?? ""
     }
 
+    //MARK:设置user的某个key对应的value
+    func setUserConfigValue(value:Any,forkey:String) -> Void {
+        
+        let keys=[String]()
+        let values=[String]()
+        
+        let args:va_list
+        
+        
+        
+        
+        let valueCount=values.count
+        if valueCount != keys.count {
+            
+            
+        }else{
+            
+            var configDictionary:Dictionary<String,String>=[:]
+            
+            for index in 0..<valueCount{
+                
+                configDictionary["\(values[index])"] = "\(keys[index])"
+            }
+            
+            let bs = archiveDictionary(dictionary: configDictionary, toFilePath: filePathOfCommonSettings(), overwrite: false)
+            print("bs:\(bs)")
+        }
+    }
+    
+    //MARK:获取user的某个key
+    func userConfigValueForKey(key:String) -> Any {
+        
+        if key.isEmpty {
+            
+            return ""
+        }
+        let config=unarchiveDictionaryFromFilePath(filePath: filePathOfUserSettings())
+        return config[key] ?? ""
+    }
     
     //MARk:反序列化
     func unarchiveDictionaryFromFilePath(filePath:String) -> [String:String] {
