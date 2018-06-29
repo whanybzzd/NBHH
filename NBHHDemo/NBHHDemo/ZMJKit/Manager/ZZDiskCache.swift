@@ -98,7 +98,6 @@ open class ZZDiskCache {
                 keyArchiver =  NSKeyedArchiver(forWritingWith: data)
                 keyArchiver.encode(value, forKey: key.zz_MD5)  //对key进行MD5加密
                 keyArchiver.finishEncoding() //归档完毕
-                
                 do {
                     try data.write(toFile: path, options: NSData.WritingOptions.atomic)  //存储
                     //完成回调
@@ -146,7 +145,6 @@ open class ZZDiskCache {
         let path = self.cachePathForKey(key)
         switch storeType{
         case .Object:
-            print("path:\(path)")
             stroeObject(key, value: value,path:path,completeHandler:completeHandler)
         case .Image:
             if let image = image{

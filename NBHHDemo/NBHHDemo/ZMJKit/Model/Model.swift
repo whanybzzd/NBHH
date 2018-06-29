@@ -17,6 +17,7 @@ class Model: HandyJSON {
     }
     
 }
+
 class UserMessage:HandyJSON {
     
     var companyId:Int?

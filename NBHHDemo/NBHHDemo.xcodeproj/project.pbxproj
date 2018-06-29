@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8811E2E320E5D2650096FCBF /* StorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8811E2E020E5D2650096FCBF /* StorageManager.m */; };
+		8811E2E420E5D2650096FCBF /* FileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8811E2E120E5D2650096FCBF /* FileUtils.m */; };
+		8811E2E720E5DAA60096FCBF /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8811E2E520E5DAA60096FCBF /* BaseModel.m */; };
+		8811E2EA20E5DAB10096FCBF /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8811E2E820E5DAB00096FCBF /* DataModel.m */; };
 		881D87E020E07E23005B1454 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87DF20E07E23005B1454 /* TestViewController.swift */; };
 		881D87E820E097FD005B1454 /* TestOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87E720E097FD005B1454 /* TestOneViewController.swift */; };
 		881D87EA20E09809005B1454 /* TestTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87E920E09809005B1454 /* TestTwoViewController.swift */; };
@@ -44,6 +48,14 @@
 
 /* Begin PBXFileReference section */
 		3BFE02F5C13AF500DE664400 /* Pods-NBHHDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBHHDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBHHDemo/Pods-NBHHDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8811E2DF20E5D2650096FCBF /* FileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtils.h; sourceTree = "<group>"; };
+		8811E2E020E5D2650096FCBF /* StorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageManager.m; sourceTree = "<group>"; };
+		8811E2E120E5D2650096FCBF /* FileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtils.m; sourceTree = "<group>"; };
+		8811E2E220E5D2650096FCBF /* StorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageManager.h; sourceTree = "<group>"; };
+		8811E2E520E5DAA60096FCBF /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		8811E2E620E5DAA60096FCBF /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		8811E2E820E5DAB00096FCBF /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		8811E2E920E5DAB10096FCBF /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		881D87DF20E07E23005B1454 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		881D87E720E097FD005B1454 /* TestOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneViewController.swift; sourceTree = "<group>"; };
 		881D87E920E09809005B1454 /* TestTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTwoViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +183,14 @@
 		8853169820DB888C00CC9EA2 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				8811E2E620E5DAA60096FCBF /* BaseModel.h */,
+				8811E2E520E5DAA60096FCBF /* BaseModel.m */,
+				8811E2E920E5DAB10096FCBF /* DataModel.h */,
+				8811E2E820E5DAB00096FCBF /* DataModel.m */,
+				8811E2DF20E5D2650096FCBF /* FileUtils.h */,
+				8811E2E120E5D2650096FCBF /* FileUtils.m */,
+				8811E2E220E5D2650096FCBF /* StorageManager.h */,
+				8811E2E020E5D2650096FCBF /* StorageManager.m */,
 				9A6EFC7720E515AA0085551E /* MLNavigationController */,
 				8853169920DB88A400CC9EA2 /* Bridging-head.h */,
 			);
@@ -358,6 +378,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -377,6 +398,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -421,15 +443,19 @@
 				884A8E6820DCA208007CF80C /* BaseRefreshViewController.swift in Sources */,
 				9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */,
 				885316AE20DB8A3700CC9EA2 /* Manager.swift in Sources */,
+				8811E2E720E5DAA60096FCBF /* BaseModel.m in Sources */,
 				884A8E6620DC9C77007CF80C /* Enum.swift in Sources */,
+				8811E2EA20E5DAB10096FCBF /* DataModel.m in Sources */,
 				881D87EF20E0B3B0005B1454 /* BaseTabBarController.swift in Sources */,
 				885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */,
 				881D87F720E0C8E8005B1454 /* TestOneView.swift in Sources */,
 				885316A620DB8A2000CC9EA2 /* ExtensionString.swift in Sources */,
 				9A6EFC8020E51E500085551E /* String+MD5.swift in Sources */,
+				8811E2E420E5D2650096FCBF /* FileUtils.m in Sources */,
 				881D87E820E097FD005B1454 /* TestOneViewController.swift in Sources */,
 				881D87E020E07E23005B1454 /* TestViewController.swift in Sources */,
 				9A6EFC8220E51EFB0085551E /* Student.swift in Sources */,
+				8811E2E320E5D2650096FCBF /* StorageManager.m in Sources */,
 				881D87F120E0BB41005B1454 /* TestOneTableViewCell.swift in Sources */,
 				881D87F320E0C258005B1454 /* TestOneHeadView.swift in Sources */,
 			);

@@ -17,26 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-//        let homePath = NSHomeDirectory()
-//
-//        print(homePath)
-//
-//        let stu = Student()
-//        stu.name = "小王"
-//        stu.id = 1
-//        `$`.saveObj("xxxx", value: stu)
-//
-//        `$`.getObj("xx1x") { (obj) -> () in
-//            print("我日:\(obj)")
-//
-//            //         if let obj = obj as? Student{
-//            //            print("\(obj.id) , \(obj.name)")
-//            //         }
-//        }
-//
-//        `$`.deleteObj(key: "xxxx")//删除目录
-        
-        
         self.window=UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor=UIColor.white
         self.window?.makeKeyAndVisible()
@@ -55,7 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          self.window?.rootViewController=navc
     }
     func setUpTabbarController() -> Void {
-        self.window?.rootViewController=rootViewController()
+        
+        let navc=MLNavigationController.init(rootViewController: ViewController.init())
+        self.window?.rootViewController=navc
+        
+        //self.window?.rootViewController=rootViewController()
     }
 
     func rootViewController() -> UIViewController {

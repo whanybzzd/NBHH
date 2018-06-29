@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.7.2)
   - HandyJSON (4.1.1)
   - IQKeyboardManager (6.0.4)
+  - JSONModel (1.7.0)
   - Kingfisher (4.8.0)
   - KRActivityIndicatorView (2.1.2)
   - KRProgressHUD (3.2.2):
@@ -30,6 +31,7 @@ PODS:
 DEPENDENCIES:
   - HandyJSON (~> 4.1.1)
   - IQKeyboardManager
+  - JSONModel
   - Kingfisher
   - KRProgressHUD
   - Moya
@@ -40,10 +42,11 @@ DEPENDENCIES:
   - ZVRefreshing
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - HandyJSON
     - IQKeyboardManager
+    - JSONModel
     - Kingfisher
     - KRActivityIndicatorView
     - KRProgressHUD
@@ -62,6 +65,7 @@ SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
   IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
   KRActivityIndicatorView: 27e7a7e3da7fbc8e5405fbc4088b51cc2095a410
   KRProgressHUD: 8872da74b1c462e15c82a8fff250a2d34ee82ea2
@@ -76,6 +80,6 @@ SPEC CHECKSUMS:
   ZVActivityIndicatorView: 14668601b0616d2b749004d8fa42913fc813e151
   ZVRefreshing: a537440942dde41471f7ec6517735f1e8c38334b
 
-PODFILE CHECKSUM: f155d8d1e20efedc3877dbad611fbfe88c63fab2
+PODFILE CHECKSUM: 67745f58c6d25e535f237ba1b895142fa8f38d51
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0

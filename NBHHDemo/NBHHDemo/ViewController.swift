@@ -46,6 +46,24 @@ class ViewController: BaseViewController {
                     
                     let json=JSON(response)
                     let jsonModel=JSONDeserializer<UserMessage>.deserializeFrom(json: json.description)
+                    print("jsonModel:\(jsonModel!)")
+                    
+                    //此处要报错，不能这样用
+                    //`$`.saveObj(kCachedUserModel, value: jsonModel)//缓存用户信息
+                    
+                    //`$`.getObj("xx1x") { (obj) -> () in
+                        //            print("我日:\(obj)")
+                        //
+                        //            //         if let obj = obj as? Student{
+                        //            //            print("\(obj.id) , \(obj.name)")
+                        //            //         }
+                        //        }
+                        //
+                        //        `$`.deleteObj(key: "xxxx")//删除目录
+                    
+                    //        let homePath = NSHomeDirectory()
+                    //
+                    //        print("我曹::\(homePath)")
                     
                     KRProgressHUD.dismiss({
                         

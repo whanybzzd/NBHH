@@ -6,6 +6,7 @@ target 'NBHHDemo' do
     #-- OC库
     pod 'IQKeyboardManager'
     pod 'SDCycleScrollView'
+    pod 'JSONModel'
 
     pod 'ZVRefreshing'
     pod "KRProgressHUD"

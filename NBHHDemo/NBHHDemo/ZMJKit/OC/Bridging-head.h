@@ -11,5 +11,7 @@
 
 #import "MLNavigationController.h"
 #import <SDCycleScrollView/SDCycleScrollView.h>
-
+#import "StorageManager.h"
+#import <JSONModel/JSONModel.h>
+#import "DataModel.h"
 #endif /* Bridging_head_h */

@@ -12,6 +12,9 @@ typealias `$` = ZZDiskCacheHelper
 
 public struct ZZDiskCacheHelper {
     
+    /**
+     删除缓存文件夹
+     */
     static func deleteObj(key:String){
         
         ZZDiskCache.sharedCacheObj.delete(key: key)
