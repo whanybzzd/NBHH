@@ -37,6 +37,9 @@
 		885316AE20DB8A3700CC9EA2 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316AC20DB8A3700CC9EA2 /* Manager.swift */; };
 		885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B420DB8A8E00CC9EA2 /* LoginView.swift */; };
 		885316B820DB8CF800CC9EA2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885316B720DB8CF800CC9EA2 /* BaseViewController.swift */; };
+		885A918220E9BFCE004BFA4A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A918120E9BFCD004BFA4A /* LoginViewModel.swift */; };
+		885A918420E9E2C5004BFA4A /* TestTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A918320E9E2C5004BFA4A /* TestTwoView.swift */; };
+		885A918720EA06F4004BFA4A /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 885A918620EA06F4004BFA4A /* NSTimer+BlocksKit.m */; };
 		9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */; };
 		9A6EFC7A20E515AA0085551E /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7820E515AA0085551E /* MLNavigationController.m */; };
 		9A6EFC7E20E51E500085551E /* ZZDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7B20E51E4F0085551E /* ZZDiskCache.swift */; };
@@ -85,6 +88,10 @@
 		885316AC20DB8A3700CC9EA2 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		885316B420DB8A8E00CC9EA2 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		885316B720DB8CF800CC9EA2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		885A918120E9BFCD004BFA4A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		885A918320E9E2C5004BFA4A /* TestTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTwoView.swift; sourceTree = "<group>"; };
+		885A918520EA06F3004BFA4A /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
+		885A918620EA06F4004BFA4A /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
 		9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		9A6EFC7820E515AA0085551E /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
 		9A6EFC7920E515AA0085551E /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
@@ -174,6 +181,7 @@
 		8853169720DB886300CC9EA2 /* NBHH */ = {
 			isa = PBXGroup;
 			children = (
+				885A918020E9BFBD004BFA4A /* ViewModel */,
 				9A077ADA20DFA92800799922 /* ViewController */,
 				885316B020DB8A7E00CC9EA2 /* View */,
 			);
@@ -183,6 +191,8 @@
 		8853169820DB888C00CC9EA2 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				885A918520EA06F3004BFA4A /* NSTimer+BlocksKit.h */,
+				885A918620EA06F4004BFA4A /* NSTimer+BlocksKit.m */,
 				8811E2E620E5DAA60096FCBF /* BaseModel.h */,
 				8811E2E520E5DAA60096FCBF /* BaseModel.m */,
 				8811E2E920E5DAB10096FCBF /* DataModel.h */,
@@ -235,6 +245,7 @@
 			children = (
 				885316B420DB8A8E00CC9EA2 /* LoginView.swift */,
 				881D87F620E0C8E8005B1454 /* TestOneView.swift */,
+				885A918320E9E2C5004BFA4A /* TestTwoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +259,14 @@
 				881D87EE20E0B3B0005B1454 /* BaseTabBarController.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		885A918020E9BFBD004BFA4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				885A918120E9BFCD004BFA4A /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		9A077ADA20DFA92800799922 /* ViewController */ = {
@@ -426,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				885316AA20DB8A2C00CC9EA2 /* Model.swift in Sources */,
+				885A918720EA06F4004BFA4A /* NSTimer+BlocksKit.m in Sources */,
 				9A6EFC7E20E51E500085551E /* ZZDiskCache.swift in Sources */,
 				884CF03520E33B9500BFFAE2 /* ReactiveCocoaExtension.swift in Sources */,
 				885316AD20DB8A3700CC9EA2 /* AFNManager.swift in Sources */,
@@ -435,6 +455,7 @@
 				885316B820DB8CF800CC9EA2 /* BaseViewController.swift in Sources */,
 				881D87F520E0C492005B1454 /* ExtensionView.swift in Sources */,
 				8853168220DB853600CC9EA2 /* AppDelegate.swift in Sources */,
+				885A918220E9BFCE004BFA4A /* LoginViewModel.swift in Sources */,
 				885316A520DB8A2000CC9EA2 /* AFColor.swift in Sources */,
 				881D87EA20E09809005B1454 /* TestTwoViewController.swift in Sources */,
 				9A6EFC7F20E51E500085551E /* ZZDiskCacheHelper.swift in Sources */,
@@ -445,6 +466,7 @@
 				885316AE20DB8A3700CC9EA2 /* Manager.swift in Sources */,
 				8811E2E720E5DAA60096FCBF /* BaseModel.m in Sources */,
 				884A8E6620DC9C77007CF80C /* Enum.swift in Sources */,
+				885A918420E9E2C5004BFA4A /* TestTwoView.swift in Sources */,
 				8811E2EA20E5DAB10096FCBF /* DataModel.m in Sources */,
 				881D87EF20E0B3B0005B1454 /* BaseTabBarController.swift in Sources */,
 				885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */,

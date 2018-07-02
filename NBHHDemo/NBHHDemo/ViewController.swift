@@ -38,46 +38,6 @@ class ViewController: BaseViewController {
     //登录逻辑处理
     func racInitSubView() {
         
-        self.loginView.buttonClick.reactive.controlEvents(.touchUpInside).observeValues { (button) in
-            
-            KRProgressHUD.show()
-            AFNManager.sharedInstance.requestResult(url:HTTPAPI_LOGIN_NAME,params:["username":"lw","password":"666666"],method: .post)
-                .on(value: { response in
-                    
-                    let json=JSON(response)
-                    let jsonModel=JSONDeserializer<UserMessage>.deserializeFrom(json: json.description)
-                    print("jsonModel:\(jsonModel!)")
-                    
-                    //此处要报错，不能这样用
-                    //`$`.saveObj(kCachedUserModel, value: jsonModel)//缓存用户信息
-                    
-                    //`$`.getObj("xx1x") { (obj) -> () in
-                        //            print("我日:\(obj)")
-                        //
-                        //            //         if let obj = obj as? Student{
-                        //            //            print("\(obj.id) , \(obj.name)")
-                        //            //         }
-                        //        }
-                        //
-                        //        `$`.deleteObj(key: "xxxx")//删除目录
-                    
-                    //        let homePath = NSHomeDirectory()
-                    //
-                    //        print("我曹::\(homePath)")
-                    
-                    KRProgressHUD.dismiss({
-                        
-                        (UIApplication.shared.delegate as! AppDelegate) .setUpTabbarController()
-                    })
-                    
-                })
-                .on(failed:{error in
-                    
-                    print("错误:\(error)")
-                    KRProgressHUD.showError()
-                })
-                .start()
-        }
         
         //label点击事件
         let registerTapClick=UITapGestureRecognizer.init()

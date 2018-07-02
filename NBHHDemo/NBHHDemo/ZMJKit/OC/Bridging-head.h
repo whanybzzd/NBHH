@@ -14,4 +14,5 @@
 #import "StorageManager.h"
 #import <JSONModel/JSONModel.h>
 #import "DataModel.h"
+#import "NSTimer+BlocksKit.h"
 #endif /* Bridging_head_h */

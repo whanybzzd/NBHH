@@ -10,6 +10,24 @@ import UIKit
 
 
 extension String {
+    
+    
+    public func substring(to toIndex: Int) -> String {
+        guard toIndex < count else {
+            return self
+        }
+        
+        return substring(to: index(startIndex, offsetBy: toIndex))
+    }
+    
+    public func substring(from fromIndex: Int) -> String {
+        guard fromIndex < count else {
+            return self
+        }
+        
+        return substring(from: index(startIndex, offsetBy: fromIndex))
+    }
+    
     // LEFT
     // Returns the specified number of chars from the left of the string
     // let str = "Hello"

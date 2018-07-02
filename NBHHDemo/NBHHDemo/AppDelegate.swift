@@ -36,10 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func setUpTabbarController() -> Void {
         
-        let navc=MLNavigationController.init(rootViewController: ViewController.init())
-        self.window?.rootViewController=navc
-        
-        //self.window?.rootViewController=rootViewController()
+        self.window?.rootViewController=rootViewController()
     }
 
     func rootViewController() -> UIViewController {

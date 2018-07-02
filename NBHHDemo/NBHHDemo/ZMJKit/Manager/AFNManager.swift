@@ -32,10 +32,10 @@ extension AFNManager{
     
     
     
-    func requestResult(url:String,params:[String:Any],method:HTTPMethod)->SignalProducer<Any,NetworkError>{
+    func requestResult(url:String,params:[String:Any],method:HTTPMethod)->SignalProducer<Any?,NetworkError>{
         
         
-        return SignalProducer<Any,NetworkError>{ observer, disposable in
+        return SignalProducer<Any?,NetworkError>{ observer, disposable in
             
             
             let firstSearch = SignalProducer<(), NetworkError>(value: ())
@@ -68,7 +68,7 @@ extension AFNManager{
     
     
     //result请求
-   private func result(url:String,params:[String:Any],method:HTTPMethod)->SignalProducer<Any, NetworkError> {
+   private func result(url:String,params:[String:Any],method:HTTPMethod)->SignalProducer<Any?, NetworkError> {
         
         return SignalProducer {observer,disponsable in
             

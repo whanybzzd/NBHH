@@ -31,45 +31,39 @@ class LoginView: UIView {
     
     func racInitSubView() {
         
-        //获取用户名\密码的长度
+        viewModel=LoginViewModel()
         
-        let validUsernameSignal=userNameTextField.reactive.continuousTextValues.map({
-            
-            text in
-            
-            return (text?.count)!>=5
-        })
-        validUsernameSignal.observeValues {[weak self] (backgroundColor) in
-            
-            self?.userNameTextField.textColor = backgroundColor ? UIColor.colorWithHexString("#333333") : UIColor.red
-        }
-        
-        
-        
-        let validUserpasswordSignal=passwordTextField.reactive.continuousTextValues.map({
-            text in
-            
-            return (text?.count)!>=5
-        })
-        
-        validUserpasswordSignal.observeValues { [weak self](backgroundColor) in
-            
-            self?.passwordTextField.textColor = backgroundColor ? UIColor.colorWithHexString("#333333") : UIColor.red
-        }
-        
-        
-        Signal.combineLatest(validUsernameSignal, validUserpasswordSignal).map({
-            (isValidUsername,isValidPassword) in
-            
-            return isValidUsername && isValidPassword
-        }).observeValues {[weak self] (signal) in
-            
-            self?.buttonClick.backgroundColor = signal ? UIColor.colorWithHexString("#356cf9") : UIColor.colorWithHexString("#d5d6db")
-            self?.buttonClick.isEnabled = signal
-        }
         
     }
     
+    var viewModel:LoginViewModelProtocol!{
+        
+        didSet{
+            
+            viewModel.initSubViewData(accountInput: self.userNameTextField.reactive.continuousTextValues, passwordInput: self.passwordTextField.reactive.continuousTextValues)
+            
+            userNameTextField.reactive.text <~ viewModel.account
+            passwordTextField.reactive.text <~ viewModel.password
+            
+            //赋值文本框颜色
+            userNameTextField.reactive.textColor <~ viewModel.accountTextColor.map({text in
+                
+                text.count == 0 ? UIColor.lightGray : UIColor.red
+            })
+            
+            passwordTextField.reactive.textColor <~ viewModel.passwordTextColor.map({password in
+
+                password.count == 0 ? UIColor.lightGray : UIColor.red
+            })
+            
+            
+            buttonClick.reactive.pressed = ButtonAction(viewModel.submitLoginAction)
+            buttonClick.reactive.backgroundColor <~ viewModel.errorMessage.map({text in
+                
+                text.count == 0 ? UIColor.red : UIColor.lightGray
+            })
+        }
+    }
     
     
     
@@ -120,8 +114,9 @@ class LoginView: UIView {
         
         self.addSubview(buttonClick)
         buttonClick .setTitle("登录", for: UIControlState.normal)
-        buttonClick.backgroundColor=UIColor.colorWithHexString("#d5d6db")
-        buttonClick.isEnabled=false
+        //buttonClick.backgroundColor=UIColor.colorWithHexString("#d5d6db")
+        //buttonClick.isEnabled=false
+        buttonClick.backgroundColor=UIColor.lightGray
         buttonClick.setTitleColor(UIColor.white, for: UIControlState.normal)
         buttonClick.titleLabel?.font=UIFont.systemFont(ofSize: 15)
         buttonClick.layer.cornerRadius=25
