@@ -139,6 +139,12 @@ class LoginView: UIView {
             make.centerX.equalTo(self)
             make.top.equalTo(buttonClick.snp.bottom).offset(20)
             make.height.equalTo(15)
+            
+            //水平中心线--button的左边
+            //make.centerX.lessThanOrEqualTo(buttonClick.snp.leading)
+            
+            //居左对其
+            //make.left.greaterThanOrEqualTo(buttonClick.snp.left)
         }
         
         

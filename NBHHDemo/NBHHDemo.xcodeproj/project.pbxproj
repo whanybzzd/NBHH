@@ -40,6 +40,8 @@
 		885A918220E9BFCE004BFA4A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A918120E9BFCD004BFA4A /* LoginViewModel.swift */; };
 		885A918420E9E2C5004BFA4A /* TestTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A918320E9E2C5004BFA4A /* TestTwoView.swift */; };
 		885A918720EA06F4004BFA4A /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 885A918620EA06F4004BFA4A /* NSTimer+BlocksKit.m */; };
+		885BBC9320EC7D8A000881A6 /* TableViewHeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BBC9220EC7D8A000881A6 /* TableViewHeightController.swift */; };
+		885BBC9520EC7E80000881A6 /* TableViewHeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BBC9420EC7E80000881A6 /* TableViewHeightTableViewCell.swift */; };
 		9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */; };
 		9A6EFC7A20E515AA0085551E /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7820E515AA0085551E /* MLNavigationController.m */; };
 		9A6EFC7E20E51E500085551E /* ZZDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7B20E51E4F0085551E /* ZZDiskCache.swift */; };
@@ -92,6 +94,8 @@
 		885A918320E9E2C5004BFA4A /* TestTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTwoView.swift; sourceTree = "<group>"; };
 		885A918520EA06F3004BFA4A /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
 		885A918620EA06F4004BFA4A /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
+		885BBC9220EC7D8A000881A6 /* TableViewHeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeightController.swift; sourceTree = "<group>"; };
+		885BBC9420EC7E80000881A6 /* TableViewHeightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeightTableViewCell.swift; sourceTree = "<group>"; };
 		9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		9A6EFC7820E515AA0085551E /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
 		9A6EFC7920E515AA0085551E /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
@@ -278,6 +282,8 @@
 				881D87E920E09809005B1454 /* TestTwoViewController.swift */,
 				881D87F020E0BB41005B1454 /* TestOneTableViewCell.swift */,
 				881D87F220E0C258005B1454 /* TestOneHeadView.swift */,
+				885BBC9220EC7D8A000881A6 /* TableViewHeightController.swift */,
+				885BBC9420EC7E80000881A6 /* TableViewHeightTableViewCell.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -444,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885BBC9520EC7E80000881A6 /* TableViewHeightTableViewCell.swift in Sources */,
 				885316AA20DB8A2C00CC9EA2 /* Model.swift in Sources */,
 				885A918720EA06F4004BFA4A /* NSTimer+BlocksKit.m in Sources */,
 				9A6EFC7E20E51E500085551E /* ZZDiskCache.swift in Sources */,
@@ -470,6 +477,7 @@
 				8811E2EA20E5DAB10096FCBF /* DataModel.m in Sources */,
 				881D87EF20E0B3B0005B1454 /* BaseTabBarController.swift in Sources */,
 				885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */,
+				885BBC9320EC7D8A000881A6 /* TableViewHeightController.swift in Sources */,
 				881D87F720E0C8E8005B1454 /* TestOneView.swift in Sources */,
 				885316A620DB8A2000CC9EA2 /* ExtensionString.swift in Sources */,
 				9A6EFC8020E51E500085551E /* String+MD5.swift in Sources */,

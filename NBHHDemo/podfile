@@ -8,6 +8,7 @@ target 'NBHHDemo' do
     pod 'SDCycleScrollView'
     pod 'JSONModel'
 
+    pod 'Kingfisher'
     pod 'ZVRefreshing'
     pod "KRProgressHUD"
     pod 'ReactiveCocoa'

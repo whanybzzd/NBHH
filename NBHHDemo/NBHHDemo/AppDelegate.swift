@@ -41,10 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func rootViewController() -> UIViewController {
         
-        let tabClassArray=["TestOneViewController","TestTwoViewController"]
-        let tabItemUnSeletedImageArray=["首页","更多"]
-        let tabItemSeletedImageArray=["首页选中","更多选中"]
-        let tabItemNamesArray=["首页","更多"]
+        let tabClassArray=["TestOneViewController","TableViewHeightController","TestTwoViewController"]
+        let tabItemUnSeletedImageArray=["首页","更多","更多"]
+        let tabItemSeletedImageArray=["首页选中","更多选中","更多选中"]
+        let tabItemNamesArray=["首页","更多","更多"]
         var viewControllers:Array<Any>=Array<Any>()
        
         for (index,item) in tabClassArray.enumerated(){
