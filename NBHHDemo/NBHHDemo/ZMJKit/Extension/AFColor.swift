@@ -1,9 +1,9 @@
 //
 //  AFColor.swift
-//  SBS
+//  NBHHDemo
 //
-//  Created by jktz on 2018/6/20.
-//  Copyright © 2018年 ZMJ. All rights reserved.
+//  Created by jktz on 2018/6/27.
+//  Copyright © 2018年 jktz. All rights reserved.
 //
 
 import UIKit

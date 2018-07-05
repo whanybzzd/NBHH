@@ -1,9 +1,9 @@
 //
 //  ExtensionString.swift
-//  WWSwift_Test
+//  NBHHDemo
 //
-//  Created by admin  on 2018/4/13.
-//  Copyright © 2018年 吴伟. All rights reserved.
+//  Created by jktz on 2018/6/27.
+//  Copyright © 2018年 jktz. All rights reserved.
 //
 
 import UIKit

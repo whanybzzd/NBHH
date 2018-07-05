@@ -1,9 +1,9 @@
 //
 //  ZZNavBarTransparent.swift
-//  ZZNavBarTransparentDemo
+//  NBHHDemo
 //
-//  Created by zerry on 2018/6/14.
-//  Copyright © 2018年 zerry. All rights reserved.
+//  Created by jktz on 2018/6/27.
+//  Copyright © 2018年 jktz. All rights reserved.
 //
 
 import UIKit
@@ -349,6 +349,8 @@ extension UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = self.navBarTitleTextAttributes
 
     }
+    
+    
     
     func scrollViewDidNav(scrollView:UIScrollView) -> Void {
         
