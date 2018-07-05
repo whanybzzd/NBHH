@@ -19,6 +19,8 @@
 		881D87F320E0C258005B1454 /* TestOneHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87F220E0C258005B1454 /* TestOneHeadView.swift */; };
 		881D87F520E0C492005B1454 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87F420E0C492005B1454 /* ExtensionView.swift */; };
 		881D87F720E0C8E8005B1454 /* TestOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87F620E0C8E8005B1454 /* TestOneView.swift */; };
+		884819A820EDBE7100A367A3 /* MJEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884819A720EDBE7100A367A3 /* MJEnum.swift */; };
+		884819AA20EDC4FA00A367A3 /* ZZNavBarTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884819A920EDC4FA00A367A3 /* ZZNavBarTransparent.swift */; };
 		884A8E6320DC9AD1007CF80C /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6220DC9AD1007CF80C /* BaseTableViewController.swift */; };
 		884A8E6620DC9C77007CF80C /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6520DC9C77007CF80C /* Enum.swift */; };
 		884A8E6820DCA208007CF80C /* BaseRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6720DCA208007CF80C /* BaseRefreshViewController.swift */; };
@@ -69,6 +71,8 @@
 		881D87F220E0C258005B1454 /* TestOneHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneHeadView.swift; sourceTree = "<group>"; };
 		881D87F420E0C492005B1454 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
 		881D87F620E0C8E8005B1454 /* TestOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneView.swift; sourceTree = "<group>"; };
+		884819A720EDBE7100A367A3 /* MJEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJEnum.swift; sourceTree = "<group>"; };
+		884819A920EDC4FA00A367A3 /* ZZNavBarTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZNavBarTransparent.swift; sourceTree = "<group>"; };
 		884A8E6220DC9AD1007CF80C /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		884A8E6520DC9C77007CF80C /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		884A8E6720DCA208007CF80C /* BaseRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRefreshViewController.swift; sourceTree = "<group>"; };
@@ -214,10 +218,12 @@
 		885316A020DB8A1500CC9EA2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				884819A920EDC4FA00A367A3 /* ZZNavBarTransparent.swift */,
 				885316A420DB8A2000CC9EA2 /* ExtensionString.swift */,
 				885316A320DB8A2000CC9EA2 /* AFColor.swift */,
 				881D87F420E0C492005B1454 /* ExtensionView.swift */,
 				884CF03420E33B9500BFFAE2 /* ReactiveCocoaExtension.swift */,
+				884819A720EDBE7100A367A3 /* MJEnum.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -454,6 +460,7 @@
 				885316AA20DB8A2C00CC9EA2 /* Model.swift in Sources */,
 				885A918720EA06F4004BFA4A /* NSTimer+BlocksKit.m in Sources */,
 				9A6EFC7E20E51E500085551E /* ZZDiskCache.swift in Sources */,
+				884819AA20EDC4FA00A367A3 /* ZZNavBarTransparent.swift in Sources */,
 				884CF03520E33B9500BFFAE2 /* ReactiveCocoaExtension.swift in Sources */,
 				885316AD20DB8A3700CC9EA2 /* AFNManager.swift in Sources */,
 				8853168A20DB853600CC9EA2 /* NBHHDemo.xcdatamodeld in Sources */,
@@ -484,6 +491,7 @@
 				8811E2E420E5D2650096FCBF /* FileUtils.m in Sources */,
 				881D87E820E097FD005B1454 /* TestOneViewController.swift in Sources */,
 				881D87E020E07E23005B1454 /* TestViewController.swift in Sources */,
+				884819A820EDBE7100A367A3 /* MJEnum.swift in Sources */,
 				9A6EFC8220E51EFB0085551E /* Student.swift in Sources */,
 				8811E2E320E5D2650096FCBF /* StorageManager.m in Sources */,
 				881D87F120E0BB41005B1454 /* TestOneTableViewCell.swift in Sources */,

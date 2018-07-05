@@ -13,6 +13,8 @@ class TestOneView: UIView,UITableViewDelegate,UITableViewDataSource {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubview(self.OnetableView)
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

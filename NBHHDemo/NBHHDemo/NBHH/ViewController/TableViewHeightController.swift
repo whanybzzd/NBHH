@@ -12,8 +12,23 @@ class TableViewHeightController: BaseViewController,UITableViewDelegate,UITableV
 
     var dataArray:Array<Any>=Array<Any>()
     var imageArray:Array<Any>=Array<Any>()
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        self.zz_viewWillAppear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //导航栏设置
+        self.navBarBgAlpha = 0
+        self.navBarTintColor = UIColor.defaultNavBarTintColor
+        self.navBarColor = UIColor.init(red: 1, green: 0, blue: 0, alpha: 1)
+        
+        self.navBarTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white,NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 18)]
+        
+        
         
         //TODO:测试数据
         dataArray.append("设计的佛我翻脸施蒂利克史莱克的房间里金石可镂带饭了路附近路口啥都放假我房间里的沙基拉就是了； ")
@@ -38,6 +53,8 @@ class TableViewHeightController: BaseViewController,UITableViewDelegate,UITableV
         return tableView
     }()
 }
+
+
 extension TableViewHeightController{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,4 +74,11 @@ extension TableViewHeightController{
         
         
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView){
+        
+        self.scrollViewDidNav(scrollView: scrollView)
+    }
+    
+    
 }
