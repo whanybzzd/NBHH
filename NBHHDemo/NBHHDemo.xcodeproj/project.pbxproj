@@ -21,6 +21,11 @@
 		881D87F720E0C8E8005B1454 /* TestOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D87F620E0C8E8005B1454 /* TestOneView.swift */; };
 		884819A820EDBE7100A367A3 /* MJEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884819A720EDBE7100A367A3 /* MJEnum.swift */; };
 		884819AA20EDC4FA00A367A3 /* ZZNavBarTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884819A920EDC4FA00A367A3 /* ZZNavBarTransparent.swift */; };
+		884819AF20EDFBD000A367A3 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884819AC20EDFBCF00A367A3 /* WebView.swift */; };
+		884819B020EDFBD000A367A3 /* WKJSPOST.html in Resources */ = {isa = PBXBuildFile; fileRef = 884819AD20EDFBD000A367A3 /* WKJSPOST.html */; };
+		884819B120EDFBD000A367A3 /* WkwebViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884819AE20EDFBD000A367A3 /* WkwebViewConfig.swift */; };
+		884819B320EDFC5600A367A3 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 884819B220EDFC5600A367A3 /* test.html */; };
+		884819B520EDFCB200A367A3 /* YF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884819B420EDFCB200A367A3 /* YF.swift */; };
 		884A8E6320DC9AD1007CF80C /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6220DC9AD1007CF80C /* BaseTableViewController.swift */; };
 		884A8E6620DC9C77007CF80C /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6520DC9C77007CF80C /* Enum.swift */; };
 		884A8E6820DCA208007CF80C /* BaseRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6720DCA208007CF80C /* BaseRefreshViewController.swift */; };
@@ -73,6 +78,11 @@
 		881D87F620E0C8E8005B1454 /* TestOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOneView.swift; sourceTree = "<group>"; };
 		884819A720EDBE7100A367A3 /* MJEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJEnum.swift; sourceTree = "<group>"; };
 		884819A920EDC4FA00A367A3 /* ZZNavBarTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZZNavBarTransparent.swift; sourceTree = "<group>"; };
+		884819AC20EDFBCF00A367A3 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		884819AD20EDFBD000A367A3 /* WKJSPOST.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKJSPOST.html; sourceTree = "<group>"; };
+		884819AE20EDFBD000A367A3 /* WkwebViewConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WkwebViewConfig.swift; sourceTree = "<group>"; };
+		884819B220EDFC5600A367A3 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		884819B420EDFCB200A367A3 /* YF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YF.swift; sourceTree = "<group>"; };
 		884A8E6220DC9AD1007CF80C /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		884A8E6520DC9C77007CF80C /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		884A8E6720DCA208007CF80C /* BaseRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRefreshViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +139,18 @@
 				EF8BB95EED29EF6726E6B2CB /* Pods_NBHHDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		884819AB20EDFBCF00A367A3 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				884819B220EDFC5600A367A3 /* test.html */,
+				884819AC20EDFBCF00A367A3 /* WebView.swift */,
+				884819AD20EDFBD000A367A3 /* WKJSPOST.html */,
+				884819AE20EDFBD000A367A3 /* WkwebViewConfig.swift */,
+				884819B420EDFCB200A367A3 /* YF.swift */,
+			);
+			path = WKWebView;
 			sourceTree = "<group>";
 		};
 		884A8E6420DC9C64007CF80C /* Enum */ = {
@@ -218,6 +240,7 @@
 		885316A020DB8A1500CC9EA2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				884819AB20EDFBCF00A367A3 /* WKWebView */,
 				884819A920EDC4FA00A367A3 /* ZZNavBarTransparent.swift */,
 				885316A420DB8A2000CC9EA2 /* ExtensionString.swift */,
 				885316A320DB8A2000CC9EA2 /* AFColor.swift */,
@@ -373,7 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8853168F20DB853900CC9EA2 /* LaunchScreen.storyboard in Resources */,
+				884819B020EDFBD000A367A3 /* WKJSPOST.html in Resources */,
 				8853168C20DB853900CC9EA2 /* Assets.xcassets in Resources */,
+				884819B320EDFC5600A367A3 /* test.html in Resources */,
 				8853168720DB853600CC9EA2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +508,7 @@
 				885A918420E9E2C5004BFA4A /* TestTwoView.swift in Sources */,
 				8811E2EA20E5DAB10096FCBF /* DataModel.m in Sources */,
 				881D87EF20E0B3B0005B1454 /* BaseTabBarController.swift in Sources */,
+				884819B520EDFCB200A367A3 /* YF.swift in Sources */,
 				885316B520DB8A8E00CC9EA2 /* LoginView.swift in Sources */,
 				885BBC9320EC7D8A000881A6 /* TableViewHeightController.swift in Sources */,
 				881D87F720E0C8E8005B1454 /* TestOneView.swift in Sources */,
@@ -491,11 +517,13 @@
 				8811E2E420E5D2650096FCBF /* FileUtils.m in Sources */,
 				881D87E820E097FD005B1454 /* TestOneViewController.swift in Sources */,
 				881D87E020E07E23005B1454 /* TestViewController.swift in Sources */,
+				884819AF20EDFBD000A367A3 /* WebView.swift in Sources */,
 				884819A820EDBE7100A367A3 /* MJEnum.swift in Sources */,
 				9A6EFC8220E51EFB0085551E /* Student.swift in Sources */,
 				8811E2E320E5D2650096FCBF /* StorageManager.m in Sources */,
 				881D87F120E0BB41005B1454 /* TestOneTableViewCell.swift in Sources */,
 				881D87F320E0C258005B1454 /* TestOneHeadView.swift in Sources */,
+				884819B120EDFBD000A367A3 /* WkwebViewConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

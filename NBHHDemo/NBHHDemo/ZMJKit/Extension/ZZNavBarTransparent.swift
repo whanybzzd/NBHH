@@ -383,3 +383,4 @@ extension UIViewController {
         setNeedsStatusBarAppearanceUpdate()
     }
 }
+
