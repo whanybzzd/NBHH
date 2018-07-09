@@ -1,16 +1,18 @@
 //
-//  ReactiveCocoaExtension.swift
-//  NBHHDemo
+//  ViewController.swift
+//  ReactiveSwiftDemo
 //
-//  Created by jktz on 2018/6/27.
-//  Copyright © 2018年 jktz. All rights reserved.
+//  Created by ZMJ on 2018/6/25.
+//  Copyright © 2018年 ZMJ. All rights reserved.
 //
 
 import Result
 import ReactiveCocoa
 import ReactiveSwift
 
-typealias ButtonAction = CocoaAction<UIButton>
+
+typealias ButtonAction = ReactiveCocoa.CocoaAction<UIButton>
+typealias BarButtonAction = ReactiveCocoa.CocoaAction<UIBarButtonItem>
 
 extension SignalProducer where Error == NoError {
     
@@ -20,7 +22,7 @@ extension SignalProducer where Error == NoError {
     }
 }
 
-extension CocoaAction{
+extension CocoaAction {
     
     public convenience init<Output, Error>(_ action: Action<Any?, Output, Error>) {
         self.init(action, input: nil)

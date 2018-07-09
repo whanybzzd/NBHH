@@ -29,7 +29,6 @@
 		884A8E6320DC9AD1007CF80C /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6220DC9AD1007CF80C /* BaseTableViewController.swift */; };
 		884A8E6620DC9C77007CF80C /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6520DC9C77007CF80C /* Enum.swift */; };
 		884A8E6820DCA208007CF80C /* BaseRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A8E6720DCA208007CF80C /* BaseRefreshViewController.swift */; };
-		884CF03520E33B9500BFFAE2 /* ReactiveCocoaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884CF03420E33B9500BFFAE2 /* ReactiveCocoaExtension.swift */; };
 		8853168220DB853600CC9EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8853168120DB853600CC9EA2 /* AppDelegate.swift */; };
 		8853168420DB853600CC9EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8853168320DB853600CC9EA2 /* ViewController.swift */; };
 		8853168720DB853600CC9EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8853168520DB853600CC9EA2 /* Main.storyboard */; };
@@ -49,6 +48,7 @@
 		885A918720EA06F4004BFA4A /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 885A918620EA06F4004BFA4A /* NSTimer+BlocksKit.m */; };
 		885BBC9320EC7D8A000881A6 /* TableViewHeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BBC9220EC7D8A000881A6 /* TableViewHeightController.swift */; };
 		885BBC9520EC7E80000881A6 /* TableViewHeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BBC9420EC7E80000881A6 /* TableViewHeightTableViewCell.swift */; };
+		887A313120F36DE70052BB13 /* ReactiveCocoaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887A313020F36DE70052BB13 /* ReactiveCocoaExtension.swift */; };
 		9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */; };
 		9A6EFC7A20E515AA0085551E /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7820E515AA0085551E /* MLNavigationController.m */; };
 		9A6EFC7E20E51E500085551E /* ZZDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7B20E51E4F0085551E /* ZZDiskCache.swift */; };
@@ -86,7 +86,6 @@
 		884A8E6220DC9AD1007CF80C /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		884A8E6520DC9C77007CF80C /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		884A8E6720DCA208007CF80C /* BaseRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRefreshViewController.swift; sourceTree = "<group>"; };
-		884CF03420E33B9500BFFAE2 /* ReactiveCocoaExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveCocoaExtension.swift; sourceTree = "<group>"; };
 		8853167E20DB853600CC9EA2 /* NBHHDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBHHDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8853168120DB853600CC9EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8853168320DB853600CC9EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +109,7 @@
 		885A918620EA06F4004BFA4A /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
 		885BBC9220EC7D8A000881A6 /* TableViewHeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeightController.swift; sourceTree = "<group>"; };
 		885BBC9420EC7E80000881A6 /* TableViewHeightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeightTableViewCell.swift; sourceTree = "<group>"; };
+		887A313020F36DE70052BB13 /* ReactiveCocoaExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCocoaExtension.swift; sourceTree = "<group>"; };
 		9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		9A6EFC7820E515AA0085551E /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
 		9A6EFC7920E515AA0085551E /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 				885316A420DB8A2000CC9EA2 /* ExtensionString.swift */,
 				885316A320DB8A2000CC9EA2 /* AFColor.swift */,
 				881D87F420E0C492005B1454 /* ExtensionView.swift */,
-				884CF03420E33B9500BFFAE2 /* ReactiveCocoaExtension.swift */,
+				887A313020F36DE70052BB13 /* ReactiveCocoaExtension.swift */,
 				884819A720EDBE7100A367A3 /* MJEnum.swift */,
 			);
 			path = Extension;
@@ -486,7 +486,6 @@
 				885A918720EA06F4004BFA4A /* NSTimer+BlocksKit.m in Sources */,
 				9A6EFC7E20E51E500085551E /* ZZDiskCache.swift in Sources */,
 				884819AA20EDC4FA00A367A3 /* ZZNavBarTransparent.swift in Sources */,
-				884CF03520E33B9500BFFAE2 /* ReactiveCocoaExtension.swift in Sources */,
 				885316AD20DB8A3700CC9EA2 /* AFNManager.swift in Sources */,
 				8853168A20DB853600CC9EA2 /* NBHHDemo.xcdatamodeld in Sources */,
 				885316A920DB8A2C00CC9EA2 /* NetworkError.swift in Sources */,
@@ -500,6 +499,7 @@
 				9A6EFC7F20E51E500085551E /* ZZDiskCacheHelper.swift in Sources */,
 				884A8E6320DC9AD1007CF80C /* BaseTableViewController.swift in Sources */,
 				9A6EFC7A20E515AA0085551E /* MLNavigationController.m in Sources */,
+				887A313120F36DE70052BB13 /* ReactiveCocoaExtension.swift in Sources */,
 				884A8E6820DCA208007CF80C /* BaseRefreshViewController.swift in Sources */,
 				9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */,
 				885316AE20DB8A3700CC9EA2 /* Manager.swift in Sources */,

@@ -41,9 +41,9 @@ class ViewController: BaseViewController {
         
         //label点击事件
         let registerTapClick=UITapGestureRecognizer.init()
-        registerTapClick.reactive.stateChanged.observeValues {[weak self] (tap) in
+        registerTapClick.reactive.stateChanged.observeValues {[unowned self] (tap) in
             
-            self?.pushViewController(className: "TestViewController", withParams: ["title":"首页"])
+            self.pushViewController(className: "TestViewController", withParams: ["title":"首页"])
         }
         self.loginView.registerlabel.addGestureRecognizer(registerTapClick)
         
