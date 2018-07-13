@@ -17,4 +17,16 @@ public extension UIDevice {
         
         return false
     }
+    
+    
+    public func RatioW(x:CGFloat)->CGFloat{
+        
+        return CGFloat(x*(KSCREEN_WIDTH/375))//375是根据UI出图的比例
+    }
+    
+    public func RatioH(x:CGFloat)->CGFloat{
+        
+        return CGFloat(x*(KSCREEN_WIDTH/667))//667是根据UI出图的比例
+    }
+    
 }
