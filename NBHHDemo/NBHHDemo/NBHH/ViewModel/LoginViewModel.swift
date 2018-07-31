@@ -95,6 +95,7 @@ class LoginViewModel {
     
     private var submitProducer:SignalProducer<Any?, NetworkError>{
         
+        KRProgressHUD.show()
       return  AFNManager.sharedInstance.requestResult(url:HTTPAPI_LOGIN_NAME,params:["username":"lw","password":"666666"],method: .post)
             .on(value: { response in
                 

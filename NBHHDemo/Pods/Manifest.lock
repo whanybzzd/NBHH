@@ -24,6 +24,9 @@ PODS:
   - SDWebImage/Core (4.4.1)
   - SnapKit (4.0.0)
   - SwiftyJSON (4.1.0)
+  - TOCropViewController (2.1.0)
+  - YLImagePickerController (0.0.9):
+    - TOCropViewController (~> 2.1.0)
   - ZVActivityIndicatorView (0.1.2)
   - ZVRefreshing (2.0.4):
     - ZVActivityIndicatorView
@@ -39,6 +42,7 @@ DEPENDENCIES:
   - SDCycleScrollView
   - SnapKit
   - SwiftyJSON (~> 4.1.0)
+  - YLImagePickerController (~> 0.0.9)
   - ZVRefreshing
 
 SPEC REPOS:
@@ -58,6 +62,8 @@ SPEC REPOS:
     - SDWebImage
     - SnapKit
     - SwiftyJSON
+    - TOCropViewController
+    - YLImagePickerController
     - ZVActivityIndicatorView
     - ZVRefreshing
 
@@ -77,9 +83,11 @@ SPEC CHECKSUMS:
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  TOCropViewController: f88194a084f6afe1fd6f21a3f0edda7dd097e38b
+  YLImagePickerController: 54a669c5ce7b5928ecf6321b706c4cec46294d67
   ZVActivityIndicatorView: 14668601b0616d2b749004d8fa42913fc813e151
   ZVRefreshing: a537440942dde41471f7ec6517735f1e8c38334b
 
-PODFILE CHECKSUM: 7846f68aed37d0bf4ecd3cb2a98ed206885563e6
+PODFILE CHECKSUM: 5574ae7408778eda2aa179229b701ffa8d522cce
 
 COCOAPODS: 1.5.0

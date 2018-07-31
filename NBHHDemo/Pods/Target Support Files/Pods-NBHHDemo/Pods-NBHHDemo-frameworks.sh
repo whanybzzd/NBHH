@@ -158,6 +158,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TOCropViewController/TOCropViewController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YLImagePickerController/YLImagePickerController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZVRefreshing/ZVRefreshing.framework"
 fi
@@ -177,6 +179,8 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TOCropViewController/TOCropViewController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YLImagePickerController/YLImagePickerController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ZVRefreshing/ZVRefreshing.framework"
 fi

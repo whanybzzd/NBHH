@@ -10,6 +10,7 @@ target 'NBHHDemo' do
 
     pod 'Kingfisher'
     pod 'ZVRefreshing'
+    pod 'YLImagePickerController', '~> 0.0.9'
     pod "KRProgressHUD"
     pod 'ReactiveCocoa'
     pod 'HandyJSON', '~> 4.1.1'
