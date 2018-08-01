@@ -10,7 +10,7 @@ import UIKit
 
 class TestTableViewCell: UITableViewCell {
 
-    lazy var nameLabel:UILabel=UILabel()
+   fileprivate lazy var nameLabel:UILabel=UILabel()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         

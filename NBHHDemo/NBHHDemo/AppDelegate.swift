@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import ZASUpdateAlert
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        NewVersion()
+        
         
         self.window=UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor=UIColor.white
@@ -86,6 +89,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let childController = clsType.init()
         return childController
 
+    }
+    
+    
+    func NewVersion() -> Void {
+       
+        if self.compareVersionUpdate(newVersion: "1.0.3") {
+            
+            ZASUpdateAlert.show(version: "V1.0.7", content: "1.全新UI界面\n2.更好的性能体验\n3.投诉系统极速反馈\n4.多个BUG虫的尸体都不复存在", appId: "xxxxxxxx", isMustUpdate: false)
+        }
+    }
+    //检测是否更新
+    func compareVersionUpdate(newVersion : String) -> Bool {
+        
+        // 获取当前的版本号
+        let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")as! String
+        let newVersionArr = newVersion.components(separatedBy: ".")
+        let currVersionArr = currentVersion.components(separatedBy: ".")
+        var newVersionCount = Double(newVersionArr.joined(separator: ""))
+        var currVersionCount = Double(currVersionArr.joined(separator: ""))
+        if newVersionArr.count > currVersionArr.count {
+            currVersionCount = currVersionCount! * pow(10, Double(newVersionArr.count - currVersionArr.count))
+        }else{
+            newVersionCount = newVersionCount! * pow(10, Double(currVersionArr.count - newVersionArr.count))
+        }
+        if newVersionCount! > currVersionCount! {
+            return true
+        }else{
+            return false
+        }
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

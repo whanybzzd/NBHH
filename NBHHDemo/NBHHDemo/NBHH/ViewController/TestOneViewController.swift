@@ -22,7 +22,7 @@ class TestOneViewController: BaseViewController {
         self.OneView.bannerArray(banner: bannerArray)
     }
     
-    lazy var OneView:TestOneView={()->TestOneView in
+   fileprivate lazy var OneView:TestOneView={()->TestOneView in
         
         let oneView=TestOneView(frame: CGRect(x: 0, y: height!, width: SCREEN_WIDTH, height: SCREEN_HEIGHT-height!))
         return oneView

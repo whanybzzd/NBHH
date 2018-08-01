@@ -27,6 +27,7 @@ PODS:
   - TOCropViewController (2.1.0)
   - YLImagePickerController (0.0.9):
     - TOCropViewController (~> 2.1.0)
+  - ZASUpdateAlert (0.1.0)
   - ZVActivityIndicatorView (0.1.2)
   - ZVRefreshing (2.0.4):
     - ZVActivityIndicatorView
@@ -43,6 +44,7 @@ DEPENDENCIES:
   - SnapKit
   - SwiftyJSON (~> 4.1.0)
   - YLImagePickerController (~> 0.0.9)
+  - ZASUpdateAlert
   - ZVRefreshing
 
 SPEC REPOS:
@@ -64,6 +66,7 @@ SPEC REPOS:
     - SwiftyJSON
     - TOCropViewController
     - YLImagePickerController
+    - ZASUpdateAlert
     - ZVActivityIndicatorView
     - ZVRefreshing
 
@@ -85,9 +88,10 @@ SPEC CHECKSUMS:
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   TOCropViewController: f88194a084f6afe1fd6f21a3f0edda7dd097e38b
   YLImagePickerController: 54a669c5ce7b5928ecf6321b706c4cec46294d67
+  ZASUpdateAlert: 46496ff34fe7055481dd7d382348dd95002cd1d8
   ZVActivityIndicatorView: 14668601b0616d2b749004d8fa42913fc813e151
   ZVRefreshing: a537440942dde41471f7ec6517735f1e8c38334b
 
-PODFILE CHECKSUM: 5574ae7408778eda2aa179229b701ffa8d522cce
+PODFILE CHECKSUM: b2eececd1a8329cf44a674af7861a7fb56d8f874
 
 COCOAPODS: 1.5.0

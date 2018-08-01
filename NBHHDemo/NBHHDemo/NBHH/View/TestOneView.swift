@@ -25,7 +25,7 @@ class TestOneView: UIView,UITableViewDelegate,UITableViewDataSource {
         fatalError("init(coder:) has not been implemented")
     }
     
-    lazy var OnetableView:UITableView={()->UITableView in
+   fileprivate lazy var OnetableView:UITableView={()->UITableView in
         
         let tableView=UITableView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: self.height), style: .plain)
         tableView.register(TestOneTableViewCell.self, forCellReuseIdentifier: "cell1")
@@ -36,7 +36,7 @@ class TestOneView: UIView,UITableViewDelegate,UITableViewDataSource {
         return tableView
     }()
     
-    lazy var headView:TestOneHeadView={()->TestOneHeadView in
+   fileprivate lazy var headView:TestOneHeadView={()->TestOneHeadView in
         
         let tableHeadView=TestOneHeadView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 200*KSCREEN_HEIGHT))
         return tableHeadView
