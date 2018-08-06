@@ -49,6 +49,7 @@
 		885BBC9320EC7D8A000881A6 /* TableViewHeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BBC9220EC7D8A000881A6 /* TableViewHeightController.swift */; };
 		885BBC9520EC7E80000881A6 /* TableViewHeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885BBC9420EC7E80000881A6 /* TableViewHeightTableViewCell.swift */; };
 		887A313120F36DE70052BB13 /* ReactiveCocoaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887A313020F36DE70052BB13 /* ReactiveCocoaExtension.swift */; };
+		88FA3FC9211848B8004B3901 /* NSMutableAttributedExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FA3FC8211848B8004B3901 /* NSMutableAttributedExtension.swift */; };
 		9A077ADC20DFA93E00799922 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */; };
 		9A6EFC7A20E515AA0085551E /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7820E515AA0085551E /* MLNavigationController.m */; };
 		9A6EFC7E20E51E500085551E /* ZZDiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EFC7B20E51E4F0085551E /* ZZDiskCache.swift */; };
@@ -110,6 +111,7 @@
 		885BBC9220EC7D8A000881A6 /* TableViewHeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeightController.swift; sourceTree = "<group>"; };
 		885BBC9420EC7E80000881A6 /* TableViewHeightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeightTableViewCell.swift; sourceTree = "<group>"; };
 		887A313020F36DE70052BB13 /* ReactiveCocoaExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCocoaExtension.swift; sourceTree = "<group>"; };
+		88FA3FC8211848B8004B3901 /* NSMutableAttributedExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedExtension.swift; sourceTree = "<group>"; };
 		9A077ADB20DFA93E00799922 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		9A6EFC7820E515AA0085551E /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
 		9A6EFC7920E515AA0085551E /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				881D87F420E0C492005B1454 /* ExtensionView.swift */,
 				887A313020F36DE70052BB13 /* ReactiveCocoaExtension.swift */,
 				884819A720EDBE7100A367A3 /* MJEnum.swift */,
+				88FA3FC8211848B8004B3901 /* NSMutableAttributedExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				881D87E820E097FD005B1454 /* TestOneViewController.swift in Sources */,
 				881D87E020E07E23005B1454 /* TestViewController.swift in Sources */,
 				884819AF20EDFBD000A367A3 /* WebView.swift in Sources */,
+				88FA3FC9211848B8004B3901 /* NSMutableAttributedExtension.swift in Sources */,
 				884819A820EDBE7100A367A3 /* MJEnum.swift in Sources */,
 				9A6EFC8220E51EFB0085551E /* Student.swift in Sources */,
 				8811E2E320E5D2650096FCBF /* StorageManager.m in Sources */,
@@ -678,7 +682,10 @@
 				DEVELOPMENT_TEAM = 5G4LN66PPW;
 				INFOPLIST_FILE = NBHHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.NBHHDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NBHHDemo/ZMJKit/OC/Bridging-head.h";
@@ -696,7 +703,10 @@
 				DEVELOPMENT_TEAM = 5G4LN66PPW;
 				INFOPLIST_FILE = NBHHDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.NBHHDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NBHHDemo/ZMJKit/OC/Bridging-head.h";

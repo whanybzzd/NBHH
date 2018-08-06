@@ -91,7 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     }
     
-    
+    ///版本检测
     func NewVersion() -> Void {
        
         if self.compareVersionUpdate(newVersion: "1.0.3") {
@@ -99,7 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ZASUpdateAlert.show(version: "V1.0.7", content: "1.全新UI界面\n2.更好的性能体验\n3.投诉系统极速反馈\n4.多个BUG虫的尸体都不复存在", appId: "xxxxxxxx", isMustUpdate: false)
         }
     }
-    //检测是否更新
+    ///检测是否更新
     func compareVersionUpdate(newVersion : String) -> Bool {
         
         // 获取当前的版本号
